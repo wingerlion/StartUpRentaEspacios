@@ -64,7 +64,7 @@ Route::get('loan_single', function () {
 });
 
 
-Route::get('login', function () {
+Route::get('/login', function () {
     return view('login');
 });
 
