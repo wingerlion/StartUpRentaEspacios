@@ -175,7 +175,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="content">
 	<div class="content-grid">
 		<div class="container">
-			<h3>Most Popular</h3>
+			<h3>Más Populares</h3>
 				<div class="col-md-4 box_2">
 			     	 <a href="single" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="images/pc4.jpg" alt="">
@@ -215,7 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="services">
 		<div class="container">
 			<div class="service-top">
-				<h3>Services</h3>
+				<h3>Servicios</h3>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 			</div>
 			<div class="services-grid">
@@ -275,10 +275,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="content-middle">
 			<div class="container">
 				<div class="mid-content">
-					<h3>the best features</h3>
+					<h3>Grandes Beneficios</h3>
 					<p>Contrary to popular belief
 							, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-					<a class="hvr-sweep-to-right more-in" href="single">Read More</a>
+					<a class="hvr-sweep-to-right more-in" href="single">Lee más</a>
 				</div>
 			</div>
 		</div>
@@ -290,20 +290,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<img src="images/ph1.png" class="img-responsive" alt=""/>
 			</div>
 			<div class="col-md-6 phone-text">
-				<h4>Search Homes Everywhere</h4>
+				<h4>Busca Espacios Dondequieras</h4>
 					<div class="text-1">
-						<h5>Custom Location Tracker</h5>
+						<h5>Tracker Personalizado</h5>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
 					</div>
 					<div class="text-1">
-						<h5>Map Search</h5>
+						<h5>Busqueda en el mapa</h5>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
 					</div>
 					<div class="text-1">
-						<h5>Quick Details</h5>
+						<h5>Detalles Rapidos</h5>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
 					</div>
-					<a href="mobile_app" class="hvr-sweep-to-right more">Download the App</a>
+					<a href="mobile_app" class="hvr-sweep-to-right more">Descarga el App</a>
 			</div>
 		</div>
 	</div>
@@ -311,7 +311,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--project--->
 	<div class="project">
 		<div class="container">
-			<h3>Project Gallery</h3>
+			<h3>Galería</h3>
 				<div class="project-top">
 					<div class="col-md-3 project-grid">
 						<div class="project-grid-top">
@@ -401,16 +401,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--test-->
 		<div class="content-bottom">
 			<div class="container">
-				<h3>Testimonials</h3>
+				<h3>Testimonios</h3>
 					<div class="col-md-6 name-in">
 						<div class=" bottom-in">
 							<p class="para-in">Duis aute irure dolor in reprehenderit in voluptate
 							velit esse cillum dolore eu fugiat nulla pariatur.</p>
 						    <i class="dolor"> </i>
 							<div class="men-grid">
-								<a href="#" class="men-top"><img class="img-responsive men-top" src="images/te.jpg" alt=""></a>
+								<a href="#" class="men-top"><img class="img-responsive men-top" src="images/Gerardo.jpg" alt=""></a>
 								<div class="men">
-								<span>Roger V. Coates</span>
+								<span>Gerardo Dávila</span>
 								<p>Ut enim ad minim</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -421,9 +421,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							velit esse cillum dolore eu fugiat nulla pariatur.</p>
 							<i class="dolor"> </i>
 							<div class="men-grid">
-								<a href="#" class="men-top"><img class="img-responsive " src="images/te2.jpg" alt=""></a>
+								<a href="#" class="men-top"><img class="img-responsive " src="images/JoseM.jpg" alt=""></a>
 								<div class="men">
-									<span>Ann K. Perez</span>
+									<span>Jose Marroquin</span>
 									<p>Ut enim ad minim</p>
 								</div>
 								<div class="clearfix"> </div>
@@ -436,9 +436,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							velit esse cillum dolore eu fugiat nulla pariatur.</p>
 							<i class="dolor"> </i>
 							<div class="men-grid">
-								<a href="#" class="men-top"><img class="img-responsive " src="images/te1.jpg" alt=""></a>
+								<a href="#" class="men-top"><img class="img-responsive " src="images/LuisLoo.jpg" alt=""></a>
 								<div class="men">
-									<span>Nancy M. Picker</span>
+									<span>Luis Loo</span>
 									<p>Ut enim ad minim</p>
 								</div>
 								<div class="clearfix"> </div>
@@ -451,7 +451,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//test-->	
 <!--partners-->
 	<div class="content-bottom1">
-		<h3>Our Partners</h3>
+		<h3>Nuestros Clientes</h3>
 	 		<div class="container">
 				<ul>
 					<li><a href="#"><img class="img-responsive" src="images/lg.png" alt=""></a></li>

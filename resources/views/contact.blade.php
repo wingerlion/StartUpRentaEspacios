@@ -9,6 +9,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Contact :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -42,16 +44,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 
-<div class="header">
-	<div class="container">
-		<!--logo-->
-			<div class="logo">
-				<h1><a href="index.html">REAL HOME</a></h1>
+
+<div class=" banner-buying">
+
+	<!--logo-->
+			<div class="titulo">
+				<h1>NovoSpace</h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
 			<ul class="right-icons">
-				<li><span ><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
 				<li><a  href="login.html"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				
@@ -65,8 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			--->
 			</div>
 		<div class="clearfix"> </div>
-			<!---pop-up-box---->
-				    
+			<!---pop-up-box---->    
 				<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
 				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 			<!---//pop-up-box---->
@@ -128,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							overflowY: 'auto',
 							closeBtnInside: true,
 							preloader: false,
-							midClick: true,
+							midClick: true,	
 							removalDelay: 300,
 							mainClass: 'my-mfp-zoom-in'
 						});
@@ -139,13 +140,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 		</div>
 		<div class="clearfix"> </div>
-		</div>	
-</div>
-<!--//-->	
-<div class=" banner-buying">
 	<div class=" container">
-	<h3><span>Cont</span>act</h3> 
 	<!---->
+
+	<!--
 	<div class="menu-right">
 		 <ul class="menu">
 			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
@@ -161,6 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</li>
 		</ul>
 	</div>
+	-->
 	<div class="clearfix"> </div>
 		<!--initiate accordion-->
 		<script type="text/javascript">
@@ -185,34 +184,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       		
 	</div>
 </div>
+	
 <!--//header-->
 <!--contact-->
 <div class="contact">
 	<div class="container">
-		<h3>Contat</h3>
+		<h3>Contactanos</h3>
 	 <div class="contact-top">
 		<div class="col-md-6 contact-top1">
-		  <h4 > Info</h4>
+		  <h4>Información</h4>
           <p class="text-contact">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took.</p>
 		  <div class="contact-address">
 		  	<div class="col-md-6 contact-address1">
-			  	 <h5>Address</h5>
-	             <p><b>The Company Name</b></p>
-	             <p>25478 charms of pleasur</p>
-	             <p>On the other hand, we denounce</p>	
+			  	 <h5>Dirección</h5>
+	             <p><b>NovoSpace</b></p>
+	             <p>Avenida Antunez de Mayolo 1247</p>
+	             <p>Lima - Los Olivos</p>	
 		  	</div>
 		  	<div class="col-md-6 contact-address1">
-			  	  <h5>Email Address </h5>
-	             <p>General :<a href="malito:mail@demolink.org"> info(at)Lorem.com</a></p>
-	             <p>Office :<a href="malito:mail@demolink.org"> info(at)Lorem.com</a></p>
+			  	  <h5>Dirección de Correo </h5>
+	             <p>General :<a href="malito:mail@demolink.org"> a20101616@pucp.pe</a></p>
+	             <p>Oficina :<a href="malito:mail@demolink.org">  a20101616@pucp.pe</a></p>
 		  	</div>
 		  	<div class="clearfix"></div>
 		  </div>
 		  <div class="contact-address">
 		  	<div class="col-md-6 contact-address1">
-			  	 <h5 >Phone </h5>
-	             <p>Landline : 254-8974-5847</p>
-	             <p>Mobile : +174 1478 74755</p>
+			  	 <h5 >Telefono </h5>
+	             <p>Oficina : 989166938</p>
 	        </div>
 		  	<div class="clearfix"></div>
 		  </div>
@@ -220,12 +219,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-6 contact-right">
 	
             <form>
-               <input type="text"  placeholder="Name" required="">
-			   <input type="text" placeholder="Email" required="">
-			   <input type="text" placeholder="Subject" required="">
-			   <textarea  placeholder="Message" requried=""></textarea>
+               <input type="text"  placeholder="Nombre" required="">
+			   <input type="text" placeholder="Correo" required="">
+			   <input type="text" placeholder="Tema" required="">
+			   <textarea  placeholder="Mensaje" requried=""></textarea>
 			   <label class="hvr-sweep-to-right">
-	           <input type="submit" value="Submit">
+	           <input type="submit" value="Enviar">
 	           </label>
 			</form>
 		</div>
@@ -233,7 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 	</div>
 	<div class="map">
-	     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3150859.767904157!2d-96.62081048651531!3d39.536794757966845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408111832978"> </iframe>
+	     <iframe src="https://www.google.com/maps/embed/v1/view?zoom=16&center=-11.9952%2C-77.0778&key=AIzaSyDCELytPWg-PS9UNNw4V_W8B-tggYeJ0eE"> </iframe>
 	    </div>
 </div>
 <!--//contact-->
