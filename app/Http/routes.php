@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
 
 Route::get('about', function () {
@@ -64,7 +64,7 @@ Route::get('loan_single', function () {
 });
 
 
-Route::get('/login', function () {
+Route::get('login', function () {
     return view('login');
 });
 
