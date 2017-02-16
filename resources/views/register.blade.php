@@ -7,8 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Real Home A Real Estate Flat Bootstarp Resposive Website Template | Register :: w3layouts</title>
+<title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Login :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -21,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Real Home  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
@@ -42,16 +44,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 
-<div class="header">
-	<div class="container">
-		<!--logo-->
-			<div class="logo">
-				<h1><a href="index.html">REAL HOME</a></h1>
+	
+<!--//-->	
+<div class=" banner-buying">
+
+	<!--logo-->
+			<div class="titulo">
+				<h1>NovoSpace</h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
 			<ul class="right-icons">
-				<li><span ><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
 				<li><a  href="login.html"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				
@@ -65,8 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			--->
 			</div>
 		<div class="clearfix"> </div>
-			<!---pop-up-box---->
-			   
+			<!---pop-up-box---->    
 				<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
 				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 			<!---//pop-up-box---->
@@ -128,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							overflowY: 'auto',
 							closeBtnInside: true,
 							preloader: false,
-							midClick: true,
+							midClick: true,	
 							removalDelay: 300,
 							mainClass: 'my-mfp-zoom-in'
 						});
@@ -139,13 +141,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 		</div>
 		<div class="clearfix"> </div>
-		</div>	
-</div>
-<!--//-->	
-<div class=" banner-buying">
 	<div class=" container">
-	<h3><span>Regis</span>ter</h3> 
 	<!---->
+
+	<!--
 	<div class="menu-right">
 		 <ul class="menu">
 			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
@@ -153,7 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li class="subitem1"><a href="buy.html">Buy </a></li>
 				<li class="subitem2"><a href="buy.html">Rent </a></li>
 				<li class="subitem3"><a href="buy.html">Hostels </a></li>
-				<li class="subitem1"><a href="buy.html">Resale </a></li>
+				<li class="subitem1"><a href="buy.html">Resale</a></li>
 				<li class="subitem2"><a href="loan.html">Home Loan</a></li>
 				<li class="subitem3"><a href="buy.html">Apartment </a></li>
 				<li class="subitem3"><a href="dealers.html">Dealers</a></li>
@@ -161,6 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</li>
 		</ul>
 	</div>
+	-->
 	<div class="clearfix"> </div>
 		<!--initiate accordion-->
 		<script type="text/javascript">
@@ -188,9 +188,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//header-->
 <!--contact-->
 <div class="login-right">
-	<div class="container">
-		<h3>Register</h3>
+	<div class="container-fluid">
+		<h3>Registro</h3>
 		<div class="login-top">
+			<!--
 				<ul class="login-icons">
 					<li><a href="#" ><i class="facebook"> </i><span>Facebook</span></a></li>
 					<li><a href="#" class="twit"><i class="twitter"></i><span>Twitter</span></a></li>
@@ -198,6 +199,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="#" class="in"><i class="linkedin"></i><span>Linkedin</span></a></li>
 					<div class="clearfix"> </div>
 				</ul>
+				-->
+				<div class= "col-md-7">
+					<img class= "Responsive-Imagen-Gerardito" src="images/pc4.jpg" alt="">
+
+				</div>
+
+				<div class= "col-md-5">
 				<div class="form-info">
 					<form>
 						<input type="text"   placeholder="Name" required="" >
@@ -208,9 +216,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				           	<input type="submit" value="Sign Up">
 				           </label>
 					</form>
-					<p>Already have a Real Home account? <a href="login.html">Login</a></p>
+					<p>¿Ya tienes una cuenta en NovoSpace? <a href="login">Login</a></p>
 				</div>
-			
+				</div>
+
 	</div>
 </div>
 </div>
