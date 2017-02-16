@@ -201,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 				-->
 				<div class= "col-md-7">
-					<img class= "Responsive-Imagen-Gerardito" src="images/pc4.jpg" alt="">
+					<img class= "Responsive-Imagen-Gerardito" src="images/HappyBox.jpg" alt="">
 
 				</div>
 
