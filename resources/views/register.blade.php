@@ -191,6 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container-fluid">
 		<h3>Registro</h3>
 		<div class="login-top">
+		<div class="row">
 			<!--
 				<ul class="login-icons">
 					<li><a href="#" ><i class="facebook"> </i><span>Facebook</span></a></li>
@@ -208,17 +209,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class= "col-md-5">
 				<div class="form-info">
 					<form>
-						<input type="text"   placeholder="Name" required="" >
-						<input type="text"   placeholder="Email Adress" required="" >
-						<input type="password"  placeholder="Password " required="">
-						
+						<input type="text"   placeholder="Nombre" required="" >
+						<input type="text"   placeholder="Correo electrónico" required="" >
+						<input type="password"  placeholder="Contraseña " required="">
+						<input type="password"  placeholder="Repita Contraseña " required="">
+<select name="cars">
+    <option value="" selected disabled hidden>Ciudad</option>
+  <option value="volvo">Lima</option>
+  <option value="saab">Arequipa</option>
+  <option value="fiat">Cusco</option>
+  <option value="audi">Ayacucho</option>
+</select>
+						<!--<p>¿Ya tienes una cuenta en NovoSpace? <a href="login">Login</a></p>-->
 						 <label class="hvr-sweep-to-right">
-				           	<input type="submit" value="Sign Up">
+				           	<input type="submit" value="Registrarse">
 				           </label>
 					</form>
-					<p>¿Ya tienes una cuenta en NovoSpace? <a href="login">Login</a></p>
 				</div>
 				</div>
+				</div>
+
+			<div class="row">
+			</div>
 
 	</div>
 </div>

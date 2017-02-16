@@ -34,9 +34,10 @@ h1,h2,h3,h4,h5,h6,label,p{
 
 .Responsive-Imagen-Gerardito{
 
+    width: 75%; 
+    display: block;
+    margin:0 auto;
 
-
-    width: 100%;
 }
 
 
@@ -2847,6 +2848,20 @@ p.privacy-para {
   	cursor: pointer;
   	background:none;
 }
+
+select{
+	outline: none;
+  	background: none;
+  	color: #a3a3a3;
+  	width: 100%;
+  	padding: 10px 7px;
+  	border: none;
+  	font-size: 0.9em;
+  	border: 1px solid #eee;
+  	margin: 0 0 1em;
+}
+
+
 ul.login-icons li {
 	 display: inline-block;
 	 width:48.5%;
