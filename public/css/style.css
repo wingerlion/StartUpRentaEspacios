@@ -1113,7 +1113,7 @@ transform: rotatey(360deg);
 .banner-buying {
   background: url(../images/4.jpg) no-repeat;
   width: 100%;
-  min-height: 90px;
+  min-height: 150px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
