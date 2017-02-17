@@ -108,6 +108,11 @@ Route::get('typo', function () {
 });
 
 
+
+
+Route::post('register', array('uses' => 'PropietarioController@store'));
+
+
 Route::get('facebook', 'Auth\AccountFBController@facebook_redirect');
 Route::get('callback', 'Auth\AccountFBController@handleProviderCallback');
 

@@ -208,7 +208,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class= "col-md-5">
 				<div class="form-info">
-					<form>
+
+			
+				{{ Form::open(array('url' => 'register')) }}
 						<input type="text"   placeholder="Nombre" required="" >
 						<input type="text"   placeholder="Correo electrónico" required="" >
 						<input type="password"  placeholder="Contraseña " required="">
@@ -220,11 +222,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <option value="fiat">Cusco</option>
   <option value="audi">Ayacucho</option>
 </select>
-						<!--<p>¿Ya tienes una cuenta en NovoSpace? <a href="login">Login</a></p>-->
+			
 						 <label class="hvr-sweep-to-right">
-				           	<input type="submit" value="Registrarse">
+				           	<input type="submit" name="register" value="Register">
+
 				           </label>
-					</form>
+				{{ Form::close() }}
+			
+
 				</div>
 				</div>
 				</div>
