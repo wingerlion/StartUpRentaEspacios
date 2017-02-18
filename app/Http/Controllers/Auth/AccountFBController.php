@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Redirect;
-use Socialize;
+use Socialite;
 use Input;
 
 class AccountFBController extends Controller
@@ -25,7 +25,7 @@ class AccountFBController extends Controller
 
     public function facebook_redirect() {
     
-       return Socialize::with('facebook')->redirect();
+       return Socialite::driver('facebook')->redirect(); 
     
     }
 
@@ -38,7 +38,7 @@ class AccountFBController extends Controller
         if(\Auth::check()==false){
           session()->regenerate();
         }
-        $user = Socialize::with('facebook')->user(); // con imagenes lol
+        $user = Socialite::with('facebook')->user(); // con imagenes lol
         dd($user);
         return view('welcomeUser',compact('user'));
 
