@@ -9,9 +9,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>NovoSpace - Un lugar para compartir</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- jQuery (neces<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+sary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--menu-->
