@@ -32,15 +32,13 @@ class AccountFBController extends Controller
    // to get authenticate user data
     public function handleProviderCallback(Request $request){
 
-  $state = $request->get('state');
-           $request->session()->put('state',$state);
+        $valor = Socialize::with('facebook')->user(); // con imagenes lol
 
-        if(\Auth::check()==false){
-          session()->regenerate();
-        }
-        $user = Socialite::with('facebook')->user(); // con imagenes lol
-        dd($user);
-        return view('welcomeUser',compact('user'));
+        $nombre = $valor->getName();
+        $avatarAux = $valor->getAvatar();
+        $avatar= str_replace("?type=normal","?width=320",$avatarAux); 
+        return view('welcomeUser',compact('nombre','avatar'));
+
 
         
     }
