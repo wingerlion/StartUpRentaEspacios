@@ -213,7 +213,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			<div class="create">
 				<h4>¿Nuevo usuario?</h4>
-				<a class="hvr-sweep-to-right" href="register.html">Crear una cuenta</a>
+				<a class="hvr-sweep-to-right" href="register">Crear una cuenta</a>
 				<div class="clearfix"> </div>
 			</div>
 	</div>

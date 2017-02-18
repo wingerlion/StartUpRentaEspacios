@@ -64,7 +64,7 @@ Route::get('loan_single', function () {
 });
 
 
-Route::get('/login', function () {
+Route::get('login', function () {
     return view('login');
 });
 
@@ -106,6 +106,11 @@ Route::get('terms', function () {
 Route::get('typo', function () {
     return view('typo');
 });
+
+
+
+
+Route::post('register', array('uses' => 'PropietarioController@store'));
 
 
 Route::get('facebook', 'Auth\AccountFBController@facebook_redirect');
