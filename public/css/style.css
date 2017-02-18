@@ -32,11 +32,41 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 /*----*/
 
+#A_1 {
+    color: rgb(244, 244, 244);
+    text-align: center;
+    text-decoration: none;
+    column-rule-color: rgb(244, 244, 244);
+    background: rgb(74, 170, 165) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 0px solid rgb(227, 237, 244);
+    border-right: 0px solid rgb(227, 237, 244);
+    border-bottom: 2px solid rgb(58, 154, 149);
+    border-left: 0px solid rgb(227, 237, 244);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal bold normal 14px / 24px Arial, sans-serif;
+    margin: 50px 0px 0px 5px;
+    outline: rgb(244, 244, 244) none 0px;
+    padding: 10px 25px;
+}/*#A_1*/
+
+
+
 .Responsive-Imagen-Gerardito{
 
     width: 75%; 
     display: block;
     margin:0 auto;
+
+}
+
+.Responsive-Imagen-FB{
+
+    width: 40%; 
+    display: block;
+    margin:0 auto;
+    border-radius: 500px;
+    background: #000000;
+    padding: 5px;
 
 }
 
@@ -491,6 +521,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   	font-family: 'Montserrat-Regular';
 }
 .content-grid h3:after,.content-grid h3:before{
+
 	width: 200px;
 	height: 1px;
 	display: inline-block;
@@ -2814,6 +2845,23 @@ p.privacy-para {
 	  font-family: 'Montserrat-Regular';
 	  margin: 0 0 1em;
 }
+
+.login-right h2 {
+	  text-align: center;
+	  color: #000;
+	  font-size: 3em;
+	 font-family: 'Raleway', sans-serif;
+	  margin: 0 0 0.3em;
+}
+
+.login-right h1{
+	  text-align: center;
+	  color: #000;
+	  font-size: 3em;
+	  font-family: 'Raleway', sans-serif;
+	  margin: 0 0 1em;
+}
+
 .login-right h3:after, .login-right h3:before {
   	width: 130px;
   	height: 1px;
