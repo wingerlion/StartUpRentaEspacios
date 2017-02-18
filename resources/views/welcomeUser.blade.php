@@ -202,19 +202,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class= "col-md-5 less-padding">
  
 			<div class = "divider-button-user">
-					<button class="button1">Alquileres       </button>
+					<button class="button1">Alquileres</button>
 			</div>
 
 			<div class = "divider-button-user">
-					<button class="button1">Mis Datos        </button>
+					<button class="button1">Mis Datos</button>
 			</div>
 
 			<div class = "divider-button-user">
-					<button class="button1">Pago de Membresia</button>
+					<button class="button1">Membresia</button>
 			</div>
 
 			<div class = "divider-button-user">
-					<button class="button1">Funcionalidad 4   </button>
+					<button class="button1">Otra Función</button>
 			</div> 
 		</div>
 
