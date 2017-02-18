@@ -246,14 +246,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="footer-top-at">
 			<div class="col-md-3 amet-sed">
-				<h4>Our Company</h4>
+				<h4>Nuestra Compañia</h4>
 				<ul class="nav-bottom">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="blog.html">For Sale By Owner Blog</a></li>
+					<li><a href="about.html">Sobre nosostros</a></li>
+					<!--<li><a href="blog.html">For Sale By Owner Blog</a></li>
+						<li><a href="blog.html">Blog</a></li>
 					<li><a href="mobile_app.html">Mobile</a></li>
-					<li><a href="terms.html">Terms & Conditions</a></li>
-					<li><a href="privacy.html">Privacy Policy</a></li>	
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="terms.html">Terminos y Condiciones</a></li>-->
+					<li><a href="privacy.html">Política de Privacidad</a></li>	
 					
 				</ul>	
 			</div>
@@ -269,14 +269,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
-				<h4>Customer Support</h4>
-				<p>Mon-Fri, 7AM-7PM </p>
-				<p>Sat-Sun, 8AM-5PM </p>
-				<p>177-869-6559</p>
+				<h4>Soporte al cliente</h4>
+				<p>Lun-Vie, 9AM-6PM </p>
+				<p>Sab-Dom, 8AM-5PM </p>
+				<p>989166938</p>
 					<ul class="nav-bottom">
-						<li><a href="#">Live Chat</a></li>
-						<li><a href="faqs.html">Frequently Asked Questions</a></li>
-						<li><a href="suggestion.html">Make a Suggestion</a></li>
+						<li><a href="#">Chat en vivo</a></li>
+						<li><a href="faqs">Frequently Asked Questions</a></li>
+						<li><a href="suggestion">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
