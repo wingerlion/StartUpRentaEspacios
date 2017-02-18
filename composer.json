@@ -7,13 +7,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*", 
-<<<<<<< HEAD
-        "laravel/socialite": "^2.0"
-=======
         "laravel/socialite": "^2.0",
         "laravelcollective/html": "~5.0"
 
->>>>>>> 668d12f43e24debf4000733a12baba138f0a4b11
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
