@@ -188,19 +188,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!--//header-->
 <!--contact-->
-<div class="login-right">
-	<div class="container-fluid">
+<div class="login-right-user">
+	<div class="container">
 		<h2>Bienvenido</h2>
 		<h1>{{$nombre}}</h1>
 
-		<div class= "col-md-7">
+		<div class="row">
+		<div class= "col-md-7 less-padding">
 			<img class= "Responsive-Imagen-FB" src="{{$avatar}}" alt="">
 		</div>
 
-		<div class= "col-md-5">
+		<div class= "col-md-5 less-padding">
+ 
+			<div class = "divider-button-user">
+					<button class="button1">Funcionalidad 1</button>
+			</div>
 
-			<a href="http://shariarbd.com/demo/css3-hexagon-buttons/documentation/" rel="nofollow" id="A_1">download / more info</a>
-	
+			<div class = "divider-button-user">
+					<button class="button1">Funcionalidad 2</button>
+			</div>
+
+			<div class = "divider-button-user">
+					<button class="button1">Funcionalidad 3</button>
+			</div>
+
+			<div class = "divider-button-user">
+					<button class="button1">Funcionalidad 4</button>
+			</div>
+
+		</div>
+
 		</div>
 	</div>
 </div>
