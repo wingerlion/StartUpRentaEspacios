@@ -171,52 +171,63 @@ h1,h2,h3,h4,h5,h6,label,p{
 .bottom-head a:hover .buy-media h6{
 	color:#27da93;
 }
+
 i.buy{
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
 	background: url(../images/img-sprite.png) no-repeat -3px -39px ;
 	display: block;
 	margin: 0 auto;
 }
 i.rent{
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
 	background: url(../images/img-sprite.png) no-repeat -37px -39px ;
 	display: block;
 	margin: 0 auto;
 }
+
+i.almacenar{
+	width: 40px;
+	height: 40px;
+	background: url(../images/icon_box.png) no-repeat ;
+	display: block;
+	margin: 0 auto;
+}
+
+
 i.pg{
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
 	background: url(../images/img-sprite.png) no-repeat -72px -39px ;
 	display: block;
 	margin: 0 auto;
 }
 
 i.sell{
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
 	background: url(../images/img-sprite.png) no-repeat -142px -39px ;
 	display: block;
 	margin: 0 auto;
 }
-i.loan{
-	width: 32px;
-	height: 32px;
-	background: url(../images/img-sprite.png) no-repeat -178px -39px ;
+i.parkCar{
+	width: 40px;
+	height: 40px;
+	background: url(../images/icon_park.png) no-repeat;
 	display: block;
 	margin: 0 auto;
 }
 i.apart{
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
 	background: url(../images/img-sprite.png) no-repeat -212px -39px ;
 	display: block;
 	margin: 0 auto;
 }
 i.deal{
-	width: 32px;
-	height: 32px;
+	width: 40px;
+	height: 40px;
 	background: url(../images/img-sprite.png) no-repeat -248px -39px ;
 	display: block;
 	margin: 0 auto;

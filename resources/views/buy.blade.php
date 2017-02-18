@@ -7,14 +7,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Buy :: w3layouts</title>
+<title>NovoSpace - Un lugar para compartir</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--menu-->
 <script src="js/scripts.js"></script>
 <link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+
 <!--//menu-->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -28,32 +32,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
+	
 	<div class="navigation">
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="index.html">Home</a></li>
-						<li><a  href="about.html">About Us</a></li>
-						<li><a  href="blog.html">Blog</a></li>
-						<li><a  href="terms.html">Terms</a></li>
-						<li><a  href="privacy.html">Privacy</a></li>
-						<li><a  href="contact.html">Contact</a></li>
+						<li><a  href="index">Inicio</a></li>
+						<li><a  href="about">Sobre Nosotros</a></li>
+						<li><a  href="terms">Terminos</a></li>
+						<li><a  href="privacy">Privacidad</a></li>
+						<li><a  href="contact">Contactanos</a></li>
 					</ul>
 				</nav>			
 			</div>
 		</div>
 
-<div class="header">
-	<div class="container">
+
+<!--//-->
+<div class=" banner-buying">
 		<!--logo-->
-			<div class="logo">
-				<h1><a href="index.html">REAL HOME</a></h1>
+			<div class="titulo">
+				<h1>NovoSpace</h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
 			<ul class="right-icons">
-				<li><span ><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
-				<li><a  href="login.html"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				
 			</ul>
@@ -66,8 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			--->
 			</div>
 		<div class="clearfix"> </div>
-			<!---pop-up-box---->
-				    
+			<!---pop-up-box---->    
 				<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
 				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 			<!---//pop-up-box---->
@@ -80,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>For Sale</span></li>
 							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>For Rent</span></li>
 							  <div class="clearfix"></div>
-						  </ul>				  	 
+						  </ul>				  	 F
 						  <div class="resp-tabs-container">
 						  		<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>All Homes</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
 								 	<div class="facts">
@@ -129,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							overflowY: 'auto',
 							closeBtnInside: true,
 							preloader: false,
-							midClick: true,
+							midClick: true,	
 							removalDelay: 300,
 							mainClass: 'my-mfp-zoom-in'
 						});
@@ -137,54 +139,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});
 				</script>
 					
-	
+			<div class="clearfix"> </div>
+
 		</div>
-		<div class="clearfix"> </div>
-		</div>	
-</div>
-<!--//-->	
-<div class=" banner-buying">
-	<div class=" container">
-	<h3><span>Lor</span>em</h3> 
-	<!---->
-	<div class="menu-right">
-		 <ul class="menu">
-			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="buy.html">Buy </a></li>
-				<li class="subitem2"><a href="buy.html">Rent </a></li>
-				<li class="subitem3"><a href="buy.html">Hostels </a></li>
-				<li class="subitem1"><a href="buy.html">Resale </a></li>
-				<li class="subitem2"><a href="loan.html">Home Loan</a></li>
-				<li class="subitem3"><a href="buy.html">Apartment </a></li>
-				<li class="subitem3"><a href="dealers.html">Dealers</a></li>
-			</ul>
-		</li>
-		</ul>
-	</div>
-	<div class="clearfix"> </div>
-		<!--initiate accordion-->
-		<script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
-			
-			});
-		</script>
-      		
-	</div>
 </div>
 <!--//header-->
 <div class="container">
@@ -193,9 +150,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="price">
 		<div class="price-grid">
 			<div class="col-sm-4 price-top">
-				<h4>City</h4>
+				<h4>País</h4>
 				<select class="in-drop">
-					<option>Select City</option>
+					<option>Seleccione País</option>
+					<option>Peru</option>
+					<option>Argentina</option>
+					<option>Colombia</option>
+					<option>Bolivia</option>
+					<option>Ecuador	</option>
+				</select>
+			</div>
+			<div class="col-sm-4 price-top">
+				<h4>Ciudad</h4>
+				<select class="in-drop">
+					<option>Selecione Ciudad</option>
 					<option>Bangkok</option>
 					<option>Tokyo</option>
 					<option>London</option>
@@ -218,7 +186,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</select>
 			</div>
 			<div class="col-sm-4 price-top">
-				<h4>Category</h4>
+				<h4>Categoria</h4>
 				<select class="in-drop">
 					<option>Select Category</option>
 					<option>Apartment</option>
@@ -230,77 +198,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<option>Penthouse</option>
 				</select>
 			</div>
-			<div class="col-sm-4 price-top">
-				<h4>Rooms</h4>
-				<select class="in-drop">
-					<option>No. of Bedrooms</option>
-					<option>1 BHK</option>
-					<option>2 BHK</option>
-					<option>3 BHK</option>
-					<option>4 BHK</option>
-					<option>4+ BHK</option>
-				</select>
-			</div>
+	
 			<div class="clearfix"> </div>
 		</div>
 		<div class="price-grid">
 			<div class="col-sm-6 price-top1">
-				<h4>Price Range</h4>
+				<h4>Rango de Precios</h4>
 				<ul>
 					<li>
 						<select class="in-drop">
-							<option>Price From</option>
-							<option>0</option>
-							<option>5 Lacs </option>
-							<option>10 Lacs</option>
-							<option>15 Lacs</option>
-							<option>20 Lacs</option>
-							<option>25 Lacs</option>
-							<option>30 Lacs</option>
-							<option>35 Lacs</option>
-							<option>40 Lacs</option>
-							<option>45 Lacs</option>
-							<option>50 Lacs</option>
-							<option>55 Lacs</option>
-							<option>60 Lacs</option>
-							<option>65 Lacs</option>
-							<option>70 Lacs</option>
-							<option>75 Lacs</option>
-							<option>80 Lacs</option>
-							<option>85 Lacs</option>
-							<option>90 Lacs</option>
-							<option>95 Lacs</option>
+							<option>Precio Desde</option>
+							<option>300 Soles </option>
+							<option>500 Soles</option>
+							<option>700 Soles</option>
+							<option>900 Soles</option>
+							<option>1100 Soles</option>
+							<option>1300 Soles</option>
+							<option>1500 Soles</option>
 						</select>
 					</li>
 					<span>-</span>
 					<li>
 						<select class="in-drop">
-							<option>Price To</option>
-							<option>5 Lacs</option>
-							<option>10 Lacs</option>
-							<option>15 Lacs</option>
-							<option>20 Lacs</option>
-							<option>25 Lacs</option>
-							<option>30 Lacs</option>
-							<option>35 Lacs</option>
-							<option>40 Lacs</option>
-							<option>45 Lacs</option>
-							<option>50 Lacs</option>
-							<option>55 Lacs</option>
-							<option>60 Lacs</option>
-							<option>65 Lacs</option>
-							<option>70 Lacs</option>
-							<option>75 Lacs</option>
-							<option>80 Lacs</option>
-							<option>85 Lacs</option>
-							<option>90 Lacs</option>
-							<option>95 Lacs</option>
-							<option>100 Cr</option>
+						<option>Precio Desde</option>
+							<option>300 Soles </option>
+							<option>500 Soles</option>
+							<option>700 Soles</option>
+							<option>900 Soles</option>
+							<option>1100 Soles</option>
+							<option>1300 Soles</option>
+							<option>1500 Soles</option>					
 						</select>
 					</li>
 				</ul>
 			</div>
 			<div class="col-sm-6 price-top1">
+			<!--
 				<h4>Area</h4>
 				<ul>
 					<li>
@@ -335,13 +268,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</select>
 					</li>
 				</ul>
+				-->
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 	<!---->
 	<div class="top-grid">
-		<h3>Top City</h3>
+		<h3>Ciudades Top</h3>
 		<div class="grid-at">
 			<div class="col-md-3 grid-city">
 				<div class="grid-lo">
@@ -446,15 +380,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <div class="container">
 	<div class="future">
-		<h3 >Fetured Projects</h3>
+		<h3 >Proximos Espacios</h3>
 			<div class="content-bottom-in">
 					<ul id="flexiselDemo1">			
 						<li><div class="project-fur">
-								<a href="single.html" ><img class="img-responsive" src="images/pi.jpg" alt="" />	</a>
+								<a href="single" ><img class="img-responsive" src="images/pi.jpg" alt="" />	</a>
 									<div class="fur">
 										<div class="fur1">
 		                                    <span class="fur-money">$2.44 Lacs - 5.28 Lacs </span>
-		                                    <h6 class="fur-name"><a href="single.html">Contrary to popular</a></h6>
+		                                    <h6 class="fur-name"><a href="single">Contrary to popular</a></h6>
 		                                   	<span>Paris</span>
                                			</div>
 			                            <div class="fur2">
@@ -463,11 +397,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>					
 							</div></li>
 							<li><div class="project-fur">
-									<a href="single.html" ><img class="img-responsive" src="images/pi1.jpg" alt="" />	</a>
+									<a href="single" ><img class="img-responsive" src="images/pi1.jpg" alt="" />	</a>
 										<div class="fur">
 											<div class="fur1">
 			                                    <span class="fur-money">$2.44 Lacs - 5.28 Lacs </span>
-			                                   <h6 class="fur-name"><a href="single.html">Contrary to popular</a></h6>
+			                                   <h6 class="fur-name"><a href="single">Contrary to popular</a></h6>
 			                                   	<span>Paris</span>
 	                               			</div>
 				                            <div class="fur2">
@@ -476,11 +410,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>					
 								</div></li>
 								<li><div class="project-fur">
-								<a href="single.html" ><img class="img-responsive" src="images/pi2.jpg" alt="" />	</a>
+								<a href="single" ><img class="img-responsive" src="images/pi2.jpg" alt="" />	</a>
 									<div class="fur">
 										<div class="fur1">
 		                                    <span class="fur-money">$2.44 Lacs - 5.28 Lacs </span>
-		                                   <h6 class="fur-name"><a href="single.html">Contrary to popular</a></h6>
+		                                   <h6 class="fur-name"><a href="single">Contrary to popular</a></h6>
 		                                   	<span>Paris</span>
                                			</div>
 			                            <div class="fur2">
@@ -489,7 +423,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>					
 							</div></li>
 							<li><div class="project-fur">
-								<a href="single.html" ><img class="img-responsive" src="images/pi3.jpg" alt="" />	</a>
+								<a href="single" ><img class="img-responsive" src="images/pi3.jpg" alt="" />	</a>
 									<div class="fur">
 										<div class="fur1">
 		                                    <span class="fur-money">$2.44 Lacs - 5.28 Lacs </span>
@@ -538,47 +472,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="footer-top-at">
 			<div class="col-md-3 amet-sed">
-				<h4>Our Company</h4>
+				<h4>Nuestra Compañia</h4>
 				<ul class="nav-bottom">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="blog.html">For Sale By Owner Blog</a></li>
+					<li><a href="about">Sobre nosostros</a></li>
+					<!--<li><a href="blog.html">For Sale By Owner Blog</a></li>
+						<li><a href="blog.html">Blog</a></li>
 					<li><a href="mobile_app.html">Mobile</a></li>
-					<li><a href="terms.html">Terms & Conditions</a></li>
-					<li><a href="privacy.html">Privacy Policy</a></li>	
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="terms.html">Terminos y Condiciones</a></li>-->
+					<li><a href="privacy">Política de Privacidad</a></li>	
+					<li><a href="contact">Contactanos</a></li>
+
 					
 				</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
-				<h4>Work With Us</h4>
+				<h4>Mejora al Servicio</h4>
 					<ul class="nav-bottom">
+					<!--
 						<li><a href="single.html">Real Estate Brokers</a></li>
 						<li><a href="single.html">Business Development</a></li>
 						<li><a href="single.html">Affiliate Programs</a></li>
-						<li><a href="contact.html">Sitemap</a></li>
-						<li><a href="career.html">Careers</a></li>
-						<li><a href="feedback.html">Feedback</a></li>	
+						-->
+						<li><a href="feedback">Feedback</a></li>	
+						<li><a href="#">Chat en vivo</a></li>
+						<li><a href="faqs">Preguntas Frecuentes</a></li>
+						<li><a href="suggestion">Envia tu sugerencia</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
-				<h4>Customer Support</h4>
-				<p>Mon-Fri, 7AM-7PM </p>
-				<p>Sat-Sun, 8AM-5PM </p>
-				<p>177-869-6559</p>
-					<ul class="nav-bottom">
-						<li><a href="#">Live Chat</a></li>
-						<li><a href="faqs.html">Frequently Asked Questions</a></li>
-						<li><a href="suggestion.html">Make a Suggestion</a></li>
-					</ul>	
+				<h4>Soporte al cliente</h4>
+				<p>Lun-Vie, 9AM-6PM </p>
+				<p>Sab-Dom, 8AM-5PM </p>
+				<p>989166938</p>
+	
 			</div>
 			<div class="col-md-3 amet-sed ">
-				<h4>Property Services</h4>
+				<h4>Servicios Propios</h4>
 				   <ul class="nav-bottom">
-						<li><a href="single.html">Residential Property</a></li>
-						<li><a href="single.html">Commercial Property</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="register.html">Register</a></li>
-						<li><a href="typo.html">Short Codes</a></li>	
+				   <!--
+						<li><a href="single">Residential Property</a></li>
+						<li><a href="single">Commercial Property</a></li>
+						<li><a href="typo">Short Codes</a></li>	
+						-->
+						<li><a href="login">Login</a></li>
+						<li><a href="register">Registro</a></li>
 					</ul>	
 					<ul class="social">
 						<li><a href="#"><i> </i></a></li>
@@ -591,7 +528,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"> </div>
 		</div>
 	</div>
+
 </div>
+	
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="index">NovoSpace</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >© 2017 NovoSpace. Diseñado por  <a href="https://www.youtube.com/watch?v=h29lOEoEi48" target="_blank">Los Practicantes</a> </p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
 <!--//footer-->
 </body>
 </html>

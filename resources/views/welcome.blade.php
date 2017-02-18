@@ -3,7 +3,7 @@
 @section('titulo')
 
  	 <div class="titulo">
-		<h1>NovoSpacesss</h1>
+		<h1>NovoSpaces</h1>
 
 		<div class="top-nav">
 	
