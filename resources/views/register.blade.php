@@ -219,7 +219,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <option value="" selected disabled hidden>Ciudad</option>
   <option value="volvo">Lima</option>
   <option value="saab">Arequipa</option>
-  <option value="fiat">Cusco</option>
+  <option value="fiat">Cuzco</option>
   <option value="audi">Ayacucho</option>
 </select>
 			
