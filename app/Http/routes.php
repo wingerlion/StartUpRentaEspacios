@@ -122,7 +122,7 @@ Route::get('publicar', function () {
 });
 
 Route::get('buscar', function () {
-    return view('buscar');
+    return view('busquedaSpace');
 });
 
 
