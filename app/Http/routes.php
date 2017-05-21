@@ -31,6 +31,10 @@ Route::get('buy', function () {
     return view('buy');
 });
 
+Route::get('busqueda', function () {
+    return view('busquedaSpace');
+});
+
 Route::get('buy_single', function () {
     return view('buy_single');
 });

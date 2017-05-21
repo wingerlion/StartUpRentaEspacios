@@ -235,7 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="map">
 	     <iframe src="https://www.google.com/maps/embed/v1/view?zoom=16&center=-11.9952%2C-77.0778&key=AIzaSyDCELytPWg-PS9UNNw4V_W8B-tggYeJ0eE"> </iframe>
-	    </div>
+	 </div>
 </div>
 <!--//contact-->
 <!--footer-->
