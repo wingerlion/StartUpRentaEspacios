@@ -3105,6 +3105,80 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
   background-image: none;
 }
+
+/*  INICIOOOO Propio de Practicantes 2k17 */
+.btn-publicar {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  border-bottom-width: 3px;
+  cursor: pointer;
+  border-radius: 24px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 35px;
+  margin-left: 25px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16.5px;
+}
+
+.btn-publicar:hover,
+.btn-publicar:focus,
+.btn-publicar.focus,
+.btn-publicar:active,
+.btn-publicar.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #ce9e43;
+  border-color: #ce9e43;
+  color: #fff;
+
+}
+.btn-publicar:active,
+.btn-publicar.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+
+.btn-buscar {
+  color: #000;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  border-bottom-width: 3px;
+  cursor: pointer;
+  border-radius: 24px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 35px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16.5px;
+}
+
+.btn-buscar:hover,
+.btn-buscar:focus,
+.btn-buscar.focus,
+.btn-buscar:active,
+.btn-buscar.active,
+.open > .dropdown-toggle.btn-primary {
+    background-color: #d0caca;
+    border-color: #d0caca;
+}
+.btn-buscar:active,
+.btn-buscar.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+
+
+
+
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,

@@ -40,7 +40,7 @@ class AccountFBController extends Controller
         }
         $user = Socialize::with('facebook')->user(); // con imagenes lol
         dd($user);
-        return view('welcomeUser',compact('user'));
+        //return view('welcomeUser',compact('user'));
 
         
     }

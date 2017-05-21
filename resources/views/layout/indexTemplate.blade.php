@@ -70,6 +70,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			           		<div class="caption">
 					          	<h3><span>vivamx</span>us site</h3>
 					          	<p>Nunc dignissim risus idi</p>
+
+
+					          	<a href="http://www.xvideos.com" class="btn btn-buscar" data-ga-category="Slider" data-ga-label="Buscar cuarto"\> Buscar un cuarto</a>
+
+					          	<a href="http://www.xvideos.com" class="btn btn-publicar" data-ga-category="Slider" data-ga-label="Buscar cuarto"\> Publicar un cuarto</a>
+
+
 			          		</div>
 			          	</div>
 			         </li>
@@ -80,6 +87,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			           		<div class="caption">
 					          	<h3><span>vivam</span>us site</h3>
 					          	<p>Nunc dignissim risus idi</p>
+
+								<a href="http://www.xvideos.com" class="btn btn-buscar" data-ga-category="Slider" data-ga-label="Buscar cuarto"\> Buscar un cuarto</a>
+
+					          	<a href="http://www.xvideos.com" class="btn btn-publicar" data-ga-category="Slider" data-ga-label="Buscar cuarto"\> Publicar un cuarto</a>
+
+
+
 			          		</div>
 			          	</div>
 			         </li>
@@ -90,6 +104,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			           		<div class="caption">
 					          	<h3><span>vivam</span>us site</h3>
 					          	<p>Nunc dignissim risus idi</p>
+
+								
+								<a href="http://www.xvideos.com" class="btn btn-buscar" data-ga-category="Slider" data-ga-label="Buscar cuarto"\> Buscar un cuarto</a>
+
+
+					          	<a href="http://www.xvideos.com" class="btn btn-publicar" data-ga-category="Slider" data-ga-label="Buscar cuarto"\> Publicar un cuarto</a>
+
+
 			          		</div>
 			          	</div>
 			         </li>		
