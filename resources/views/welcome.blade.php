@@ -3,7 +3,7 @@
 @section('titulo')
 
  	 <div class="titulo">
-		<h1>NovoSpacesss</h1>
+		<h1>NovoSpaces</h1>
 
 		<div class="top-nav">
 	
@@ -28,9 +28,9 @@
 				<div class="sap_tabs">	
 				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 						  <ul class="resp-tabs-list">
-						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>All Homes</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>For Sale</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>For Rent</span></li>
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Parqueo</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Almacenes</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Trabajadores</span></li>
 							  <div class="clearfix"></div>
 						  </ul>				  	 
 						  <div class="resp-tabs-container">

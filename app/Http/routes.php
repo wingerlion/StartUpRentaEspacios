@@ -99,7 +99,7 @@ Route::get('suggestion', function () {
 });
 
 
-Route::get('terms', function () {
+Route::get('terms', function () { 
     return view('terms');
 });
 
@@ -108,6 +108,9 @@ Route::get('typo', function () {
 });
 
 
+Route::get('feedback', function () {
+    return view('feedback');
+});
 
 
 Route::post('register', array('uses' => 'PropietarioController@store'));

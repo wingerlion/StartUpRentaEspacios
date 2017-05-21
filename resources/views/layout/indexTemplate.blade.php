@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>NovoSpace - Un lugar para compartir</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -41,20 +41,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body >
 <!--header-->
+	
 	<div class="navigation">
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="">Home</a></li>
-						<li><a  href="about">About Us</a></li>
-						<li><a  href="blog">Blog</a></li>
-						<li><a  href="terms">Terms</a></li>
-						<li><a  href="privacy">Privacy</a></li>
-						<li><a  href="contact">Contact</a></li>
+						<li><a  href="index">Inicio</a></li>
+						<li><a  href="about">Sobre Nosotros</a></li>
+						<li><a  href="terms">Terminos</a></li>
+						<li><a  href="privacy">Privacidad</a></li>
+						<li><a  href="contact">Contactanos</a></li>
 					</ul>
 				</nav>			
 			</div>
 		</div>
+
 
 
 <!--//-->	
@@ -126,19 +127,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 			<div class="bottom-header">
 				<div class="header-bottom">
+						
 					<div class=" bottom-head">
 						<a href="buy">
 							<div class="buy-media">
-								<i class="buy"> </i>
-								<h6>Buy</h6>
+								<i class=""> </i>
+								<h6></h6>
 							</div>
 						</a>
 					</div>
 					<div class=" bottom-head">
 						<a href="buy">
 							<div class="buy-media">
-							<i class="rent"> </i>
-							<h6>Rent</h6>
+							<i class="almacenar"> </i>
+							<h6>Almacenar</h6>
 							</div>
 						</a>
 					</div>
@@ -146,43 +148,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="buy">
 							<div class="buy-media">
 							<i class="pg"> </i>
-							<h6>Hostels</h6>
+							<h6>Alojar</h6>
 							</div>
 						</a>
 					</div>
+					<!--
+				
+					-->
+
 					<div class=" bottom-head">
-						<a href="buy">
-							<div class="buy-media">
-							<i class="sell"> </i>
-							<h6>Resale</h6>
-							</div>
-						</a>
-					</div>
-					<div class=" bottom-head">
-						<a href="loan">
-							<div class="buy-media">
-							<i class="loan"> </i>
-							<h6>Home Loans</h6>
-							</div>
-						</a>
-					</div>
-					<div class=" bottom-head">
-						<a href="buy">
-							<div class="buy-media">
-							<i class="apart"> </i>
-							<h6>Projects</h6>
-							</div>
-						</a>
-					</div>
-					<div class=" bottom-head">
-						<a href="dealers">
+						<a href="">  <!--dealers-->
 							<div class="buy-media">
 							<i class="deal"> </i>
-							<h6>Dealers</h6>
+							<h6>Trabajar</h6>
 							</div>
 						</a>
 					</div>
-					<div class="clearfix"> </div>
+
+
+					<div class=" bottom-head">
+						<a href=""> <!--loan-->
+							<div class="buy-media">
+							<i class="parkCar"> </i>
+							<h6>Aparcar</h6>
+							</div>
+						</a>
+					</div>
+					<div class=" bottom-head">
+						<a href="buy">
+							<div class="buy-media">
+							<i class=""> </i>
+							<h6></h6>
+							</div>
+						</a>
+					</div>
+				<div class=" bottom-head">
+						<a href="buy">
+							<div class="buy-media">
+							<i class=""> </i>
+							<h6></h6>
+							</div>
+						</a>
+					</div>				
+				<div class="clearfix"> </div>
 				</div>
 			</div>
 	</div>
@@ -325,7 +333,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h5>Detalles Rapidos</h5>
 						<p>There are many variations of passages of Lorem Ipsum available, but the majorit</p>
 					</div>
-					<a href="mobile_app" class="hvr-sweep-to-right more">Descarga el App</a>
+					<a href="" class="hvr-sweep-to-right more">Descarga el App</a>
 			</div>
 		</div>
 	</div>
@@ -496,51 +504,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//partners-->	
 	</div>
 <!--footer-->
+
 <div class="footer">
 	<div class="container">
 		<div class="footer-top-at">
 			<div class="col-md-3 amet-sed">
-				<h4>Our Company</h4>
+				<h4>Nuestra Compañia</h4>
 				<ul class="nav-bottom">
-					<li><a href="about">About Us</a></li>
-					<li><a href="blog">For Sale By Owner Blog</a></li>
-					<li><a href="mobile_app">Mobile</a></li>
-					<li><a href="terms">Terms & Conditions</a></li>
-					<li><a href="privacy">Privacy Policy</a></li>	
-					<li><a href="blog">Blog</a></li>
+					<li><a href="about">Sobre nosostros</a></li>
+					<!--<li><a href="blog.html">For Sale By Owner Blog</a></li>
+						<li><a href="blog.html">Blog</a></li>
+					<li><a href="mobile_app.html">Mobile</a></li>
+					<li><a href="terms.html">Terminos y Condiciones</a></li>-->
+					<li><a href="privacy">Política de Privacidad</a></li>	
+					<li><a href="contact">Contactanos</a></li>
+
 					
 				</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
-				<h4>Work With Us</h4>
+				<h4>Mejora al Servicio</h4>
 					<ul class="nav-bottom">
-						<li><a href="single">Real Estate Brokers</a></li>
-						<li><a href="single">Business Development</a></li>
-						<li><a href="single">Affiliate Programs</a></li>
-						<li><a href="contact">Sitemap</a></li>
-						<li><a href="career">Careers</a></li>
+					<!--
+						<li><a href="single.html">Real Estate Brokers</a></li>
+						<li><a href="single.html">Business Development</a></li>
+						<li><a href="single.html">Affiliate Programs</a></li>
+						-->
 						<li><a href="feedback">Feedback</a></li>	
+						<li><a href="#">Chat en vivo</a></li>
+						<li><a href="faqs">Preguntas Frecuentes</a></li>
+						<li><a href="suggestion">Envia tu sugerencia</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
-				<h4>Customer Support</h4>
-				<p>Mon-Fri, 7AM-7PM </p>
-				<p>Sat-Sun, 8AM-5PM </p>
-				<p>177-869-6559</p>
-					<ul class="nav-bottom">
-						<li><a href="#">Live Chat</a></li>
-						<li><a href="faqs">Frequently Asked Questions</a></li>
-						<li><a href="suggestion">Make a Suggestion</a></li>
-					</ul>	
+				<h4>Soporte al cliente</h4>
+				<p>Lun-Vie, 9AM-6PM </p>
+				<p>Sab-Dom, 8AM-5PM </p>
+				<p>989166938</p>
+	
 			</div>
 			<div class="col-md-3 amet-sed ">
-				<h4>Property Services</h4>
+				<h4>Servicios Propios</h4>
 				   <ul class="nav-bottom">
+				   <!--
 						<li><a href="single">Residential Property</a></li>
 						<li><a href="single">Commercial Property</a></li>
-						<li><a href="login">Login</a></li>
-						<li><a href="register">Register</a></li>
 						<li><a href="typo">Short Codes</a></li>	
+						-->
+						<li><a href="login">Login</a></li>
+						<li><a href="register">Registro</a></li>
 					</ul>	
 					<ul class="social">
 						<li><a href="#"><i> </i></a></li>
@@ -553,19 +565,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"> </div>
 		</div>
 	</div>
-	<!--
+
+</div>
+	
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="index.html">REAL HOME</a></h2>
+				<h2><a href="index">NovoSpace</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 Real Home. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+				<p >© 2017 NovoSpace. Diseñado por  <a href="http://w3layouts.com/" target="_blank">Los Practicantes</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>
 	</div>
-	-->
+	
 </div>
 <!--//footer-->
 </body>
