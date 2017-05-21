@@ -113,6 +113,11 @@ Route::get('feedback', function () {
 });
 
 
+Route::get('publicar', function () {
+    return view('publicar');
+});
+
+
 Route::post('register', array('uses' => 'PropietarioController@store'));
 
 
