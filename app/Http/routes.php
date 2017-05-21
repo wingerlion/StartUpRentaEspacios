@@ -117,6 +117,10 @@ Route::get('publicar', function () {
     return view('publicar');
 });
 
+Route::get('buscar', function () {
+    return view('buscar');
+});
+
 
 Route::post('register', array('uses' => 'PropietarioController@store'));
 
