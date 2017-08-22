@@ -67,11 +67,11 @@ Route::get('loan_single', function () {
     return view('loan_single');
 });
 
-
+/*
 Route::get('login', function () {
     return view('login');
 });
-
+*/
 
 Route::get('mobile_app', function () {
     return view('mobile_app');
@@ -82,11 +82,11 @@ Route::get('privacy', function () {
     return view('privacy');
 });
 
-
+/*
 Route::get('register', function () {
     return view('register');
 });
-
+*/
 
 Route::get('privacy', function () {
     return view('privacy');
@@ -126,7 +126,7 @@ Route::get('buscar', function () {
 });
 
 
-Route::post('register', array('uses' => 'PropietarioController@store'));
+//Route::post('register', array('uses' => 'PropietarioController@store'));
 
 
 Route::get('facebook', 'Auth\AccountFBController@facebook_redirect');

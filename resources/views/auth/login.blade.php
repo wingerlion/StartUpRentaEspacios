@@ -250,9 +250,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <label class="hvr-sweep-to-right">
                                     <input type="submit" value="Ingresar">
                                 </label>
-                                
+                                <!--
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
-                                
+                                -->
                             </div>
                         </div>
                     
