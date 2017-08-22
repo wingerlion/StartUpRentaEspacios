@@ -121,6 +121,7 @@ Route::get('publicar', function () {
     return view('publicar');
 });
 
+
 Route::get('buscar', function () {
     return view('busquedaSpace');
 });
@@ -135,3 +136,9 @@ Route::get('callback', 'Auth\AccountFBController@handleProviderCallback');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/inmueble', 'InmuebleController@index'); // ver todos los inmuebles publicados del arrendador
+Route::get('/inmueble/create', 'InmuebleController@create');
+Route::post('/inmueble', 'InmuebleController@store');
+
+
