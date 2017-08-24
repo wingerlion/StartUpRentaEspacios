@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ciudad extends Model
+class Departamento extends Model
 {
-
-	protected $table = 'ciudad';
+    protected $table = 'departamento';
     
     protected $fillable = [
         	'Descripcion', 

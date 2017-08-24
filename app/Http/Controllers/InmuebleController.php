@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Auth;
 use App\Inmueble;
+use DateTime;
 
 class InmuebleController extends Controller
 {
@@ -14,56 +15,71 @@ class InmuebleController extends Controller
     {
         $this->middleware('auth');
     }
-
+    
     public function index()
     {
-        return 'hola';
+        $inmuebles = Distrito::where('IdCiudad', $idCiudad)->get();
+        return view('hola');
     }
 
+    public function inmueblesArrendador()
+    {
+        $user = Auth::user();
+        $userId = $user->id;
+
+        $inmuebles = Inmueble::where('IdArrendador', $userId)->get();
+        return view('hola');
+    }
 
     public function create()
     {
-        return view('crear_inmueble');
+        //return view('crear_inmueble');
+        return view('publicar');
     } 
 
    	public function store(Request $request)
     {
-    	//$user = Auth::user()->id;
+        /*
+        $this->validate($request, [
+            //'longitud' => 'required',
+            //'latitud' => 'required',
+            'estado' => 'required',
+            'precio' => 'required',
+            'metros' => 'required',
+            'moneda' => 'required',
+            'direccion' => 'required',
+            'referencia' => 'required',
+            'disponibilidad' => 'required',
+        ]);
+        */
+
     	$user = Auth::user();
     	$userId = $user->id;
     	$input = $request->all();
 
-    	//prueba
-    	/*
-    	$input['longitud'] = 666.6;
-        $input['latitud'] = 777.7;
-		//$input['fechaInicio'] = '';
-		//$input['fechaFin'] = '';
-		$input['estado'] = 'asdffgh';
-		$input['precio'] = 2000;
-		$input['metros'] = 350;
-		$input['moneda'] = 'soles';
-		$input['direccion'] = 'av. blahh';
-		$input['referencia'] = 'refff';
-		$input['disponibilidad'] = 'libree';
-		$input['tipoInmueble'] = 1;
-		$input['distrito'] = 1;
-		*/
-        return Inmueble::create([
+        $fechaI = DateTime::createFromFormat('d-m-Y', $input['fecha-inicio']);
+        $fechaF = DateTime::createFromFormat('d-m-Y', $input['fecha-fin']);
+
+        $obj = [
             'Longitud' => $input['longitud'],
             'Latitud' => $input['latitud'],
-			//'FechaInicioPublicacion' => $input['fechaInicio'],
-			//'FechaFinPublicacion' => $input['fechaFin'],
-			'Estado' => $input['estado'],
-			'Precio' => $input['precio'],
-			'MetrosCuadrados' => $input['metros'],
-			'Moneda' => $input['moneda'],
-			'DireccionExacta' => $input['direccion'],
-			'Referencia' => $input['referencia'],
-			'DisponibilidadHoraria' => $input['disponibilidad'],
-			'IdArrendador' => $userId,
-			'IdTipoInmueble' => $input['tipoInmueble'],
-			'IdDistrito' => $input['distrito'],
-        ]);
+            'FechaInicioPublicacion' => $fechaI,
+            'FechaFinPublicacion' => $fechaF,
+            'Estado' => $input['estado'],
+            'Precio' => floatval($input['precio']),
+            'MetrosCuadrados' => floatval($input['metros']),
+            'Moneda' => $input['moneda-list'],
+            'DireccionExacta' => $input['direccion'],
+            'Referencia' => $input['referencia'],
+            'DisponibilidadHoraria' => $input['horario'],
+            'IdArrendador' => $userId,
+            'IdTipoInmueble' => $input['inmueble-list'],
+            'IdDistrito' => $input['distrito-list'],
+        ];
+
+        //dd($obj);
+        $inmueble = Inmueble::create($obj);
+
+        return redirect()->route('home.index')->with('success', "Se publicó el inmueble exitosamente.");   
     } 
 }

@@ -135,10 +135,17 @@ Route::get('callback', 'Auth\AccountFBController@handleProviderCallback');
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
+Route::get('/home', ['as' => 'home.index', 'uses' => 'HomeController@index']);
 
-Route::get('/inmueble', 'InmuebleController@index'); // ver todos los inmuebles publicados del arrendador
+Route::get('/inmuebles', 'InmuebleController@index'); // ver todos los inmuebles publicados
+Route::get('/misInmuebles', 'InmuebleController@inmueblesArrendador'); // ver todos los inmuebles publicados
 Route::get('/inmueble/create', 'InmuebleController@create');
 Route::post('/inmueble', 'InmuebleController@store');
 
 
+//ajax routes
+Route::get('/getTipoInmuebles', 'TipoInmuebleController@getTipoInmuebles');
+Route::get('/getDepartamentos', 'DepartamentoController@getDepartamentos');
+Route::get('/getCiudades/{idDepartamento}', 'CiudadController@getCiudades');
+Route::get('/getDistritos/{idCiudad}', 'DistritoController@getDistritos');
