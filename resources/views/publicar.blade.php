@@ -314,22 +314,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                       <script>
                           var latitud;
                           var longitud;
+                          var map;
+                          var marker;
                           function initMap() {
                               console.log('INICIAR MAPA GOOGLE');
                               var myLatLng = {lat: -12.054368, lng: -77.040073};
 
-                              var map = new google.maps.Map(document.getElementById('map'), {
+                              map = new google.maps.Map(document.getElementById('map'), {
                                 center: myLatLng,
                                 zoom: 8
                               });
 
-                              var marker = new google.maps.Marker({
+                              marker = new google.maps.Marker({
                                 position: myLatLng,
                                 map: map,
                                 draggable: true,
                                 title: 'Ubicación'
                               });
 
+                              //inicializar datos a enviar
+                              latitud = marker.getPosition().lat();
+                              longitud = marker.getPosition().lng();                 
+                              $('#latitud').val(latitud);
+                              $('#longitud').val(longitud);
+
+                              // arrastrar marcador
                               marker.addListener('dragend', function() {
 
                                   latitud = this.getPosition().lat();
@@ -340,6 +349,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                   $('#longitud').val(longitud);
                                   
                               });
+
+                              // This event listener will call addMarker() when the map is clicked.
+                              map.addListener('click', function(event) {
+                                  reposicionarMarcador(event.latLng);
+                              });
+                          }
+
+                          function reposicionarMarcador(location) {
+                              console.log(location);
+                              // eliminar ubicacion anterior
+                              marker.setMap(null);
+                              // ubicar marcador en donde se hizo click en el mapa
+                              marker = new google.maps.Marker({
+                                position: location,
+                                map: map,
+                                draggable: true,
+                                title: 'Ubicación'
+                              });
+
+                              //actualizar datos a enviar
+                              latitud = marker.getPosition().lat();
+                              longitud = marker.getPosition().lng();                 
+                              $('#latitud').val(latitud);
+                              $('#longitud').val(longitud);
                           }
                       </script>
                       <!-- Google Map Api -->
