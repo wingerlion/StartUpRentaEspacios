@@ -234,8 +234,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <form role="form" method="POST" action="{{ url('/register') }}">
                             {{ csrf_field() }}
 
-                            <div class="form-group{{ $errors->has('name') ? ' Error en el nombre' : '' }}">
-                                <label for="name" class="col-md-4 control-label">Name</label>
+                            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                <label for="name" class="col-md-4 control-label">Nombre</label>
 
                                 <div class="col-md-6">
                                     <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
@@ -248,8 +248,88 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </div>
 
+                            <!--  modif-->
+                            <div class="form-group{{ $errors->has('apellido') ? ' has-error' : '' }}">
+                                <label for="apellido" class="col-md-4 control-label">Apellido</label>
+
+                                <div class="col-md-6">
+                                    <input id="apellido" type="text" class="form-control" name="apellido" value="{{ old('apellido') }}">
+                                    @if ($errors->has('apellido'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('apellido') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('dni') ? ' has-error' : '' }}">
+                                <label for="dni" class="col-md-4 control-label">DNI</label>
+
+                                <div class="col-md-6">
+                                    <input id="dni" type="text" class="form-control" name="dni" value="{{ old('dni') }}">
+                                    @if ($errors->has('dni'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('dni') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('celular') ? ' has-error' : '' }}">
+                                <label for="celular" class="col-md-4 control-label">Celular</label>
+
+                                <div class="col-md-6">
+                                    <input id="celular" type="text" class="form-control" name="celular" value="{{ old('celular') }}">
+                                    @if ($errors->has('celular'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('celular') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('cuenta') ? ' has-error' : '' }}">
+                                <label for="cuenta" class="col-md-4 control-label">Número de cuenta bancaria</label>
+
+                                <div class="col-md-6">
+                                    <input id="cuenta" type="text" class="form-control" name="cuenta" value="{{ old('cuenta') }}">
+                                    @if ($errors->has('cuenta'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('cuenta') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('banco') ? ' has-error' : '' }}">
+                                <label for="banco" class="col-md-4 control-label">Banco</label>
+
+                                <div class="col-md-6">
+                                    <input id="banco" type="text" class="form-control" name="banco" value="{{ old('banco') }}">
+                                    @if ($errors->has('banco'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('banco') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('cuenta-interbancario') ? ' has-error' : '' }}">
+                                <label for="cuenta-interbancario" class="col-md-4 control-label">Número de cuenta interbancaria</label>
+
+                                <div class="col-md-6">
+                                    <input id="cuenta-interbancario" type="text" class="form-control" name="cuenta-interbancario" value="{{ old('cuenta-interbancario') }}">
+                                    @if ($errors->has('cuenta-interbancario'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('cuenta-interbancario') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <!-- end modif -->
+
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                                <label for="email" class="col-md-4 control-label">Correo electrónico</label>
 
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
@@ -263,7 +343,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
 
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                <label for="password" class="col-md-4 control-label">Password</label>
+                                <label for="password" class="col-md-4 control-label">Contraseña</label>
 
                                 <div class="col-md-6">
                                     <input id="password" type="password" class="form-control" name="password">
@@ -277,7 +357,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
 
                             <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                                <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+                                <label for="password-confirm" class="col-md-4 control-label">Confirme contraseña</label>
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation">

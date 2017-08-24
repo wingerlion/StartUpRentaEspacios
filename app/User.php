@@ -16,7 +16,7 @@ class User extends Authenticatable
      */
     
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','Nombre', 'Apellido', 'DNI', 'Celular', 'Correo', 'FechaDeIngreso', 'NumeroCuenta', 'Banco', 'NumeroCuentaInterbancario',
     ];
 
     /**
@@ -24,7 +24,10 @@ class User extends Authenticatable
      *
      * @var array
      */
+
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    //public $timestamps = false;
 }
