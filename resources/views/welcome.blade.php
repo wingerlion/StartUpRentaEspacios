@@ -4,13 +4,25 @@
 
  	 <div class="titulo">
 		<h1>NovoSpaces</h1>
+		<div style="display: inline-block; float:left; margin-top: 100px; margin-left: 50px; color: white;">
+			@if (Auth::guest())
+				<div >
+					<ul>
+						<li><a style="color: white;" href="{{ url('/login') }}"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
+			            <li><a style="color: white;" class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
+			        </ul>
+				</div>
+			@else
+			<div>
+				<strong><a style="color: white;" href="{{ url('/home') }}" class="dropdown-toggle" role="button" aria-expanded="false">Bienvenid(a), {{ Auth::user()->name }}</a></strong>
+			</div>
+			<div>
+				<a style="color: white;" href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Cerrar sesión</a>
+			</div>
+			@endif	
 
+		</div>
 		<div class="top-nav">
-	
-			<ul class = "right-icons">
-				<li><a  href="login"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
-			</ul>
-
 			<ul class = "right-icons">
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 			</ul>
@@ -89,6 +101,8 @@
 						});
 				</script>
 	</div>
-	 </div>
+
+</div>
+
 @stop
 

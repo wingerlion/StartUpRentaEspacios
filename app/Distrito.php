@@ -4,10 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ciudad extends Model
+class Distrito extends Model
 {
+    protected $table = 'distrito';
 
-	protected $table = 'ciudad';
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     
     protected $fillable = [
         	'Descripcion', 

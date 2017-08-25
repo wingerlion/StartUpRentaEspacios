@@ -67,11 +67,11 @@ Route::get('loan_single', function () {
     return view('loan_single');
 });
 
-
+/*
 Route::get('login', function () {
     return view('login');
 });
-
+*/
 
 Route::get('mobile_app', function () {
     return view('mobile_app');
@@ -82,11 +82,11 @@ Route::get('privacy', function () {
     return view('privacy');
 });
 
-
+/*
 Route::get('register', function () {
     return view('register');
 });
-
+*/
 
 Route::get('privacy', function () {
     return view('privacy');
@@ -121,14 +121,31 @@ Route::get('publicar', function () {
     return view('publicar');
 });
 
+
 Route::get('buscar', function () {
     return view('busquedaSpace');
 });
 
 
-Route::post('register', array('uses' => 'PropietarioController@store'));
+//Route::post('register', array('uses' => 'PropietarioController@store'));
 
 
 Route::get('facebook', 'Auth\AccountFBController@facebook_redirect');
 Route::get('callback', 'Auth\AccountFBController@handleProviderCallback');
 
+Route::auth();
+
+//Route::get('/home', 'HomeController@index');
+Route::get('/home', ['as' => 'home.index', 'uses' => 'HomeController@index']);
+
+Route::get('/inmuebles', 'InmuebleController@index'); // ver todos los inmuebles publicados
+Route::get('/misInmuebles', 'InmuebleController@inmueblesArrendador'); // ver todos los inmuebles publicados
+Route::get('/inmueble/create', 'InmuebleController@create');
+Route::post('/inmueble', 'InmuebleController@store');
+
+
+//ajax routes
+Route::get('/getTipoInmuebles', 'TipoInmuebleController@getTipoInmuebles');
+Route::get('/getDepartamentos', 'DepartamentoController@getDepartamentos');
+Route::get('/getCiudades/{idDepartamento}', 'CiudadController@getCiudades');
+Route::get('/getDistritos/{idCiudad}', 'DistritoController@getDistritos');

@@ -6,21 +6,18 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+
+
+    protected $table = 'arrendador'; /* tabla adaptada de migrar la tabla users */
+    public $timestamps = false; // false: para no necesitar campos updated_at, created_at
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'lastname', 'dni', 'cellphone', 'admission', 'bank_account', 'bank', 'inter_bank_account',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    
 }
