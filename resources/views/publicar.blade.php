@@ -390,6 +390,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                               //$( "#datepicker" ).datepicker($.datepicker.regional[ "es" ] );
                               $( "#datepicker2" ).datepicker({dateFormat: 'dd-mm-yy'}, $.datepicker.regional[ "es" ]);
                             });
+
+                            // Aqui se verificara que la fecha final sea mayor a la inicial
+                            $( "#datepicker2" ).change(function(){
+                                var date1 = $("#datepicker1").datepicker().val();
+                                var date2 = this.datepicker().val();
+                                // obtener dia - mes - anho
+                                var res1 = date1.split("-");
+                                var res2 = date2.split("-");
+                                console.log(res1);
+                                console.log(res2);
+                            });
+
                         </script>
                                 
                       <div class="form-group">
@@ -646,7 +658,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $('#ciudad-list').append('<option value="">--Seleccione--</option>');
         $('#distrito-list').empty();
         $('#distrito-list').append('<option value="">--Seleccione--</option>');
-        $("#inmueble-formulario").hide();
+        //$("#inmueble-formulario").hide();
 
         var baseUrl = "{{ url('') }}";
 
