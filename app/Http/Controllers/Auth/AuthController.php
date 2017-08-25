@@ -52,7 +52,7 @@ class AuthController extends Controller
 
         $rules = [   
             'apellido' => 'required|max:255|alpha',
-            'dni' => 'required|max:255|digits:8', //AQUI HABIA UN PROBLEMA EN LA VALIDACION (LA SOLUCION ES digits)
+            'dni' => 'required|max:255|digits:8', //  digits para validar texto con números
             'celular' => 'required|max:255|digits:9',
             //'correo' => 'required|max:255',
             'cuenta' => 'required|max:20',
@@ -83,7 +83,6 @@ class AuthController extends Controller
 
 
         $validator = Validator::make($data, $rules, $messages);
-        //dd($validator);
         return $validator;
     }
 
@@ -97,17 +96,14 @@ class AuthController extends Controller
     {
         $today = new DateTime();
 
-        //dd($today);
         return User::create([
-            //'Nombre' => $data['name'],
-            'Apellido' => $data['apellido'],
-            'DNI' => $data['dni'],
-            'Celular' => $data['celular'],
-            //'Correo' => $data['email'],
-            'FechaDeIngreso' => $today,
-            'NumeroCuenta' => $data['cuenta'],
-            'Banco' => $data['banco'],
-            'NumeroCuentaInterbancario' => $data['cuenta-interbancario'],
+            'lastname' => $data['apellido'],
+            'dni' => $data['dni'],
+            'cellphone' => $data['celular'],
+            'admission' => $today,
+            'bank_account' => $data['cuenta'],
+            'bank' => $data['banco'],
+            'inter_bank_account' => $data['cuenta-interbancario'],
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
