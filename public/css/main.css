@@ -1,0 +1,15 @@
+
+
+.menu >li > a, i.glyphicon.glyphicon-menu-down  {
+	color: black;
+}
+
+
+#datepicker1, #datepicker2 {
+	display: inline-block !important;
+	width: 50% !important; 
+}
+
+#inmueble-form {
+	margin-top: 50px;
+}
