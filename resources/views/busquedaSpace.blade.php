@@ -29,6 +29,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+</style>
+
+<script>
+	$(document).on("ready",function(){
+
+
+/*
+	var punto = new google.maps.LatLng(-11.9952,-77.0778);
+	var config = {
+		zoom:16,
+		center:punto,
+		mapTypeId: google.maps.MpTypeId.SATELLITE
+	};
+
+	var mapa = new google.maps.Map(  $("#mapa")[0].config);
+		//alert(1);	*/
+	});
+
+</script>
+
 </head>
 <body>
 <!--header-->
@@ -190,19 +223,83 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <!--//header-->
 <!--contact-->
+
+
 <div id="DIV_1">
 <!--
 	<div id="DIV_2">
 	</div>
 	-->
+
+
 	<div id="DIV_23">
 		<div id="DIV_24">
 			<div id="DIV_25">
 				<div id="DIV_26">
-					<div class = "map">
-	     <iframe src="https://www.google.com/maps/embed/v1/view?zoom=16&center=-11.9952%2C-77.0778&key=AIzaSyDCELytPWg-PS9UNNw4V_W8B-tggYeJ0eE"> </iframe>
-								
-					</div>
+					<div id="map"></div>
+    				<script>
+
+      					function initMap() {
+
+							//var lista = {lat: -11.9952, lng: -77.0778};
+
+        					var map = new google.maps.Map(document.getElementById('map'), {
+          						center: {lat: -11.9952, lng: -77.0778},
+          						zoom: 16,
+								mapTypeId: google.maps.MapTypeId.ROADMAP 
+        					});
+
+							map.addListener('click', function(e) {
+    							placeMarker(e.latLng, map);
+							});
+
+							function placeMarker(position, map) {
+    							var marker = new google.maps.Marker({
+        							 position: position,
+									 animation: google.maps.Animation.DROP, // como aparecera en el marcador
+								 	 draggable:false, // para q no se arrastre
+       								 map: map
+   								 });
+   						  		 map.panTo(position);
+							}
+/*
+							google.maps.event.addListener(map,"click", function(event){
+
+								var coordenadas = event.latLng.toString();
+								coordenadas = coordenadas.replace("(","");
+								coordenadas = coordenadas.replace(")","");
+						        lista =  coordenadas.split(",");
+								alert(lista[0] + lista[1]);
+								placeMarker(e.latLng, map);
+
+							})
+
+							var direccion = new google.maps.LatLng(lista[0],lista[1]);
+
+       						var marker = new google.maps.Marker({
+         						 position: lista,
+          						 map: map,
+								 animation: google.maps.Animation.DROP, // como aparecera en el marcador
+								 draggable:false // para q no se arrastre
+								 //		title: 'hola'
+        					});
+	
+	
+							var marcador = new google.maps.Marker({
+								position:direccion, // posicion del nuevo marcador
+								map: map, //enq que mapa estara el marcador
+								animation: google.maps.Animation.DROP, // como aparecera en el marcador
+								draggable:false // para q no se arrastre
+
+							});
+
+							marcador.setMap(map);
+							*/
+					
+      					}		
+
+    				</script>
+    				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQwG1d7QYu_dbedftXgRCFLsB24xCbHDk&callback=initMap"async defer></script>
 				</div>
 				<div id="DIV_165">
 					<div id="DIV_166">
