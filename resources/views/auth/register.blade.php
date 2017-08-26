@@ -288,8 +288,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </div>
 
+
+
+
+
                             <div class="form-group{{ $errors->has('cuenta') ? ' has-error' : '' }}">
-                                <label for="cuenta" class="col-md-4 control-label">Número de cuenta bancaria</label>
+                                <label for="cuenta" class="col-md-4 control-label">Num. de cuenta bancaria</label>
 
                                 <div class="col-md-6">
                                     <input id="cuenta" type="text" class="form-control" name="cuenta" value="{{ old('cuenta') }}">
@@ -300,6 +304,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     @endif
                                 </div>
                             </div>
+
+    <div class="form-group{{ $errors->has('cuenta-interbancario') ? ' has-error' : '' }}">
+                                <label for="cuenta-interbancario" class="col-md-4 control-label">Num. de cuenta interbancaria </label>
+
+                                <div class="col-md-6">
+                                    <input id="cuenta-interbancario" type="text" class="form-control" name="cuenta-interbancario" value="{{ old('cuenta-interbancario') }}">
+                                    @if ($errors->has('cuenta-interbancario'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('cuenta-interbancario') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+
 
                             <div class="form-group{{ $errors->has('banco') ? ' has-error' : '' }}">
                                 <label for="banco" class="col-md-4 control-label">Banco</label>
@@ -314,22 +333,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </div>
 
-                            <div class="form-group{{ $errors->has('cuenta-interbancario') ? ' has-error' : '' }}">
-                                <label for="cuenta-interbancario" class="col-md-4 control-label">Número de cuenta interbancaria</label>
+                        
 
-                                <div class="col-md-6">
-                                    <input id="cuenta-interbancario" type="text" class="form-control" name="cuenta-interbancario" value="{{ old('cuenta-interbancario') }}">
-                                    @if ($errors->has('cuenta-interbancario'))
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first('cuenta-interbancario') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <!-- end modif -->
 
-                            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                <label for="email" class="col-md-4 control-label">Correo electrónico</label>
+
+
+
+      <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                                <label for="email" class="col-md-4 control-label">Correo </label>
 
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
@@ -370,10 +381,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </div>
 
+
+                            <!-- end modif -->
+
+                      
+
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        <i class="fa fa-btn fa-user"></i> Register
+                                        <i class="fa fa-btn fa-user"></i> Registrar
                                     </button>
                                 </div>
                             </div>
