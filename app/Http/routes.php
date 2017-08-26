@@ -149,3 +149,7 @@ Route::get('/getTipoInmuebles', 'TipoInmuebleController@getTipoInmuebles');
 Route::get('/getDepartamentos', 'DepartamentoController@getDepartamentos');
 Route::get('/getCiudades/{idDepartamento}', 'CiudadController@getCiudades');
 Route::get('/getDistritos/{idCiudad}', 'DistritoController@getDistritos');
+
+Route::get('dashboard', function () {
+    return view('dashboard');
+});

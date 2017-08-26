@@ -80,6 +80,7 @@ class InmuebleController extends Controller
         //dd($obj);
         $inmueble = Inmueble::create($obj);
 
-        return redirect()->route('home.index')->with('success', "Se publicó el inmueble exitosamente.");   
+     //   return redirect()->route('home.index')->with('success', "Se publicó el inmueble exitosamente.");   
+        return view('dashboard');
     } 
 }
