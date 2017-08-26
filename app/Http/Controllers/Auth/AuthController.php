@@ -56,11 +56,15 @@ class AuthController extends Controller
             'celular' => 'required|max:255|digits:9',
             //'correo' => 'required|max:255',
             'cuenta' => 'required|max:20',
+
+
             'banco' => 'required|max:255',
-            'cuenta-interbancario' => 'required|max:255',
-            'name' => 'required|max:255|alpha',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+
+            
+     //       'cuenta-interbancario' => 'required|max:255',
+       //     'name' => 'required|max:255|alpha',
+       //     'email' => 'required|email|max:255|unique:users',
+       //     'password' => 'required|min:6|confirmed',
         ];
 
         $messages = [
@@ -76,10 +80,10 @@ class AuthController extends Controller
                         'numeric' => 'El campo no debe ser menor a :min.',
                         'string'  => 'El campo no debe tener menos de :min caracteres.',
                     ],
-            'email' => 'El campo debe ser un correo electrónico válido.',
+          //  'email' => 'El campo debe ser un correo electrónico válido.',
             'confirmed'     => 'La confirmación de no coincide.',
             'unique'    => 'Este campo ya existe.',
-        ];
+        ];  
 
 
         $validator = Validator::make($data, $rules, $messages);
