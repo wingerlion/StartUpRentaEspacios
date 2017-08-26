@@ -26,7 +26,6 @@
     
     <link href="{{ URL::asset('css/morris.css')}}" rel="stylesheet">
     <!-- Custom Fonts -->
-   
     <link href="{{ URL::asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,9 +49,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                 @if (Auth::guest())
+                <a class="navbar-brand" href="index.html">Novospace</a>
+                @else
+                   <a class="navbar-brand" href="index.html">Bienvenid(a), {{ Auth::user()->name }}</a>
+     @endif 
+
             </div>
             <!-- /.navbar-header -->
+
+
+            
+
+
+
+
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
