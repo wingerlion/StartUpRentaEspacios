@@ -31,6 +31,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/fileinput.min.css')}}" media="all" rel="stylesheet" type="text/css" />
+       
+ 
+
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </head>
@@ -294,15 +301,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                           <label for="pwd">Metros cuadrados (m2)</label>
                           <input type="text" class="form-control" id="metros" placeholder="" name="metros">
                       </div>
-                      <div class="form-group">
-                          <label for="pwd">Disponibilidad horaria</label><br>
-                          <input type="radio" name="horario" value="tododia" checked> Todo el día<br>
-                          <input type="radio" name="horario" value="manana"> Mañana<br>
-                          <input type="radio" name="horario" value="tarde"> Tarde<br>
-                          <input type="radio" name="horario" value="noche"> Noche<br> 
-                      </div>
-                      <br><br>
-                      <br><br>                  
+
+
+
+
+                                      
                       <div style="display:none;" class="form-group">
                           <label for="pwd">Latitud</label>
                           <input type="text" class="form-control" id="latitud" name="latitud">
@@ -375,6 +378,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                               $('#longitud').val(longitud);
                           }
                       </script>
+
+
                       <!-- Google Map Api -->
                       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfVyMAoFLOJNWifS9QAAJfvAAveyQD2WQ&callback=initMap"></script>
                       <!-- Date picker JQuery UI -->
@@ -403,9 +408,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             });
 
                         </script>
-                                
+
+                              <div class="form-group">
+                          <label for="pwd">Imágenes</label>
+                          
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="{{ URL::asset('js/fileinput.min.js')}}" type="text/javascript"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
+    
+
+
+
+                           <input id="archivos" name="imagenes[]" type="file" multiple=true class="file-loading">
+
+                    
+
+
+                      </div>
+
+
+
+                             
+
+<br>
+      <div class="form-group">
+                          <label for="pwd">Disponibilidad horaria</label><br>
+                          <input type="radio" name="horario" value="tododia" checked> Todo el día<br>
+                          <input type="radio" name="horario" value="manana"> Mañana<br>
+                          <input type="radio" name="horario" value="tarde"> Tarde<br>
+                          <input type="radio" name="horario" value="noche"> Noche<br> 
+                      </div>
+
                       <div class="form-group">
                           <div class="col-md-6 col-md-offset-4">
+
+
+
+
+                           <br>
                               <button type="submit" class="btn btn-primary">
                                   <i class="fa fa-btn fa-user"></i> Publicar
                               </button>
@@ -643,7 +683,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 <!--//footer-->
 </body>
-
+ <?php   
+    $directory = "imagenes_/";      
+    $images = glob($directory . "*.*");
+    ?>
+    
 
 <script type="text/javascript">
     $( document ).ready(function() {
@@ -803,7 +847,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
     
 
+
+
+
+
 </script>
 
-
+    <script>
+    $("#archivos").fileinput({
+    uploadUrl: "upload", 
+    uploadAsync: false,
+    minFileCount: 1,
+    maxFileCount: 20,
+    showUpload: true, 
+    showRemove: true,
+    initialPreview: [
+    <?php foreach($images as $image){?>
+        "<img src='<?php echo $image; ?>' height='120px' class='file-preview-image'>",
+    <?php } ?>],
+    initialPreviewConfig: [<?php foreach($images as $image){ $infoImagenes=explode("/",$image);?>
+    {caption: "<?php echo $infoImagenes[1];?>",  height: "120px", url: "borrar.php", key:"<?php echo $infoImagenes[1];?>"},
+    <?php } ?>]
+    }).on("filebatchselected", function(event, files) {
+    
+    $("#archivos").fileinput("upload");
+    
+    });
+    
+    </script>
 </html>
