@@ -122,10 +122,6 @@ Route::get('publicar', function () {
 });
 
 
-Route::get('buscar', function () {
-    return view('busquedaSpace');
-});
-
 
 //Route::post('register', array('uses' => 'PropietarioController@store'));
 
@@ -143,6 +139,17 @@ Route::get('/misInmuebles', 'InmuebleController@inmueblesArrendador'); // ver to
 Route::get('/inmueble/create', 'InmuebleController@create');
 Route::post('/inmueble', 'InmuebleController@store');
 
+
+//publicaciones
+Route::get('/buscar', ['as' => 'buscar', 'uses' => 'PublicacionController@indexExternal']);
+Route::get('/getLongLatAll', ['as' => 'buscar', 'uses' => 'PublicacionController@getLongLatAll']);
+
+//Route::get('/buscar', 'PublicacionController@indexExternal');
+/*
+Route::get('buscar', function () {
+    return view('busquedaSpace');
+});
+*/
 
 //ajax routes
 Route::get('/getTipoInmuebles', 'TipoInmuebleController@getTipoInmuebles');
