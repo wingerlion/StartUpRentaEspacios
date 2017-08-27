@@ -398,7 +398,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 map-single-bottom">
+	<div class="col-md-3 map-single-bottom">
+
+			<div id="map"></div>
+    		<script>
+     		 	var map;
+     		 	function initMap() {
+        			map = new google.maps.Map(document.getElementById('map'), {
+         			  center: {lat: -475.397, lng: 150.644},
+          		 	  zoom: 8
+        	 		});
+      			}
+  	  	   </script>
+
+
 			<div class="map-single">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
 			</div>
