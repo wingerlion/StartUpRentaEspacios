@@ -193,10 +193,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="login-right-user">
 	<div class="container">
 		<h2>Bienvenido</h2>
-		<h1>{{$nombre}}</h1>
+		
 		<div class="row">
 		<div class= "col-md-7 less-padding">
-			<img class= "Responsive-Imagen-FB" src="{{$avatar}}" alt="">
+			
 		</div>
 
 		<div class= "col-md-5 less-padding">

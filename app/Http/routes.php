@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcomeUser');
+    return view('welcome');
 });
 
 Route::get('about', function () {
@@ -123,6 +123,16 @@ Route::get('publicar', function () {
 
 
 
+Route::get('buscar', function () {
+    return view('busquedaSpace');
+});
+
+Route::get('pruebas', function () {
+    return view('pruebas');
+});
+
+
+
 //Route::post('register', array('uses' => 'PropietarioController@store'));
 
 
@@ -157,6 +167,5 @@ Route::get('/getDepartamentos', 'DepartamentoController@getDepartamentos');
 Route::get('/getCiudades/{idDepartamento}', 'CiudadController@getCiudades');
 Route::get('/getDistritos/{idCiudad}', 'DistritoController@getDistritos');
 
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
+Route::get('/upload', 'InmuebleController@upload');
+
