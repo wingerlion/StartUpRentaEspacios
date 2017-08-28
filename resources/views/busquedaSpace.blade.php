@@ -252,7 +252,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					function placeMarker(position, map) {
 						
-							alert(position);
 							var marker = new google.maps.Marker({
 								position: position,
 								animation: google.maps.Animation.DROP, // como aparecera en el marcador
@@ -280,10 +279,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								for(index = 0; index < data.length; index++){
 									//placeMarker(data[index],map);
-									console.log(data[index]);	
+									//console.log(data[index]);	
 									//alert(index + "");
-									var myLatlng = new google.maps.LatLng(parseFloat(data[index]['Longitud']),parseFloat(data[index]['Latitud']));
-									alert("alerta "  + myLatlng);
+									var myLatlng = new google.maps.LatLng(parseFloat(data[index]['Longitud']),parseFloat(data[index	]['Latitud']));
+									//alert("alerta "  + myLatlng);
 
 									placeMarker(myLatlng,map);
 								}
@@ -554,6 +553,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//contact-->
 <!--footer-->
 
+<!--
 <div class="footer" style = "margin-top: 10px">
 	<div class="container">
 		<div class="footer-top-at">
@@ -561,10 +561,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Nuestra Compañia</h4>
 				<ul class="nav-bottom">
 					<li><a href="about">Sobre nosostros</a></li>
-					<!--<li><a href="blog.html">For Sale By Owner Blog</a></li>
+					 <li><a href="blog.html">For Sale By Owner Blog</a></li>
 						<li><a href="blog.html">Blog</a></li>
 					<li><a href="mobile_app.html">Mobile</a></li>
-					<li><a href="terms.html">Terminos y Condiciones</a></li>-->
+					<li><a href="terms.html">Terminos y Condiciones</a></li>
 					<li><a href="privacy">Política de Privacidad</a></li>	
 					<li><a href="contact">Contactanos</a></li>
 
@@ -574,11 +574,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 amet-sed ">
 				<h4>Mejora al Servicio</h4>
 					<ul class="nav-bottom">
-					<!--
+					
 						<li><a href="single.html">Real Estate Brokers</a></li>
 						<li><a href="single.html">Business Development</a></li>
 						<li><a href="single.html">Affiliate Programs</a></li>
-						-->
 						<li><a href="feedback">Feedback</a></li>	
 						<li><a href="#">Chat en vivo</a></li>
 						<li><a href="faqs">Preguntas Frecuentes</a></li>
@@ -595,11 +594,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 amet-sed ">
 				<h4>Servicios Propios</h4>
 				   <ul class="nav-bottom">
-				   <!--
 						<li><a href="single">Residential Property</a></li>
 						<li><a href="single">Commercial Property</a></li>
 						<li><a href="typo">Short Codes</a></li>	
-						-->
+						
 						<li><a href="login">Login</a></li>
 						<li><a href="register">Registro</a></li>
 					</ul>	
@@ -627,6 +625,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"> </div>
 	 	</div>
 	</div>
+-->
 <!--//footer-->
 </body>
 </html>
