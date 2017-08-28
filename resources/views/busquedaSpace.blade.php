@@ -252,6 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					function placeMarker(position, map) {
 						
+							alert(position);
 							var marker = new google.maps.Marker({
 								position: position,
 								animation: google.maps.Animation.DROP, // como aparecera en el marcador
@@ -263,11 +264,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					function mostrarMarcadores(map) {
 						
-						$.ajaxSetup({
-  headers: {
-    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-  }
-});
 
 					    $.ajax({
 							type: "GET",
@@ -276,15 +272,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     						dataType: "json",
 							data: "",
 							success: function(data) {
-								console.log(data);
+								//console.log(data.length );
+								
+								//var myLatlng = new google.maps.LatLng(parseFloat(data[1]['Longitud']),parseFloat(data[1]['Latitud']));
+								//placeMarker(myLatlng,map);
 
-/*
-								for(var valor in data){
-									//alert(valor["Longitud"] + "");
-									console.log(data);
+
+								for(index = 0; index < data.length; index++){
+									//placeMarker(data[index],map);
+									console.log(data[index]);	
+									//alert(index + "");
+									var myLatlng = new google.maps.LatLng(parseFloat(data[index]['Longitud']),parseFloat(data[index]['Latitud']));
+									alert("alerta "  + myLatlng);
+
+									placeMarker(myLatlng,map);
 								}
 								
-								*/
+								
+								
+								
 							},
 							error: function() {
        						  	alert("chau");
