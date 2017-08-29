@@ -513,42 +513,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!--DIV_269-->
 				</div>
 
-				<div id="DIV_249">
+				<div id="DIV_249" style = "margin-top: 50px">
 					<div id="DIV_250">
 						<p id="P_251">
 							<span id="SPAN_252">61</span> espacios disponibles
 						</p>
 					</div>
 
-					<div id="DIV_254" style = "margin-top: 50px">
-					@if (count($imagenes)>0)
+					<div id="container_imagenes_gerardo">
+						@if (count($imagenes)>0)
 						@foreach($imagenes as $imagen)
-							<div id="DIV_255">
-								<div id="DIV_256">
-									<div id="DIV_258">
-										<div id="DIV_259">
-											{!! Html::image($imagen->Ruta, null, array('class'=>'', 'id'=> 'IMG_260')) !!}
-										</div>
-										<div id="DIV_261">
-											<h4 id="H4_262">
-												Espacio para entrevistas
-											</h4>
-											<p id="P_263">
-												SALAS Y AULAS para cursos o reuniones de empresa
-											</p>
-										</div>
+						<div id="item-adbox">
+							<div id="aviso">
+								<div id="img_box" style = "background: url({{ $imagen->Ruta }}) no-repeat scroll 50% 50% / cover padding-box border-box"></div>
+								<div id="top-info">
+										<span id="label-nuevo"> Nuevo </span>  
+								</div>
+								<div id="bottom-info">
+									<div id="avatar">
+										<img src="https://graph.facebook.com/10153957718669322/picture/?type=large"  />
 									</div>
+									<h3 id="precio">
+										S/. 1,500
+									</h3>
+									<p id="ubicacion">
+											Lince, Departamento de Lima, Perú
+									</p>
 								</div>
 							</div>
-							<!--<script>initMap();</script>-->
+						</div>
 						@endforeach						
-					@endif
+						@endif
 					</div>
-				
+
 				</div>
 		</div>
 	</div>
 </div>
+
+
+
 
 <!--//contact-->
 <!--footer-->
