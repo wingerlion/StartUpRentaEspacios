@@ -7,6 +7,8 @@ use App\Http\Requests;
 use Auth;
 use App\Inmueble;
 use DateTime;
+use Image;
+use App\Imagen;
 
 class InmuebleController extends Controller
 {
@@ -111,8 +113,26 @@ echo json_encode($arr);
             'IdDistrito' => $input['distrito-list'],
         ];
 
-        //dd($obj);
         $inmueble = Inmueble::create($obj);
+
+        // imagen
+        $path = 'uploads/inmuebles/'; //carpeta en la que se guardan las imagenes
+        $filename = null;
+
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $filename = $image->getClientOriginalName();
+            //$location = storage_path('app/'.$filename); // carpeta storage
+            $location = public_path($path.$filename);
+            Image::make($image)->resize(800,400)->save($location);
+
+            $filename = $path.$filename;
+        }
+
+        $imagen = Imagen::create([
+            'Ruta' => $filename,
+            'IdInmueble' => $inmueble->id,
+        ]);
 
      //   return redirect()->route('home.index')->with('success', "Se publicó el inmueble exitosamente.");   
         return view('dashboard');

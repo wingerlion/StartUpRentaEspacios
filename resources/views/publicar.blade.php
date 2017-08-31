@@ -230,7 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!-- <div id="demo1" class="collapse "> -->
     <div class="container">
           <div class= "col-md-7">
-            <form role="form" method="POST" action="{{ url('/inmueble') }}">
+            <form role="form" method="POST" action="{{ url('/inmueble') }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
 
                   <div class="form-group">
@@ -419,7 +419,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-                           <input id="archivos" name="imagenes[]" type="file" multiple=true class="file-loading">
+                           <input id="archivos" name="image" type="file" multiple=true class="file-loading">
 
                     
 

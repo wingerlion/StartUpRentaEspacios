@@ -135,6 +135,10 @@ Route::get('pruebas', function () {
     return view('pruebas');
 });
 
+Route::get('dashboard', function () {
+    return view('dashboard');
+});
+
 
 
 //Route::post('register', array('uses' => 'PropietarioController@store'));
