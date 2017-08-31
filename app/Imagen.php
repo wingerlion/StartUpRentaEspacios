@@ -17,4 +17,6 @@ class Imagen extends Model
     protected $table = 'imagen';
      
     protected $fillable = ['IdImagen', 'Ruta', 'IdInmueble'];
+
+     public $timestamps = false;
 }
