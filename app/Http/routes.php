@@ -121,6 +121,10 @@ Route::get('publicar', function () {
     return view('publicar');
 });
 
+Route::get('publicar2', function () {
+    return view('publicar2');
+});
+
 
 
 Route::get('buscar', function () {
