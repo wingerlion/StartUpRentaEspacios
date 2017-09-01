@@ -206,38 +206,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="content-grid">
 		<div class="container">
 			<h3>Más Populares</h3>
+			@if (count($arregloImagenes)>0)
+			@foreach($arregloImagenes as $arregloImagen)
 				<div class="col-md-4 box_2">
 			     	 <a href="single" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="images/pc4.jpg" alt="">
+			     	   	<img class="img-responsive zoom-img" src="  {{ $arregloImagen->Ruta }}" alt="">
 			     	   	<span class="four">40,000$</span>
 			     	 </a>
 			     	   <div class="most-1">
 			     	   	 <h5><a href="single">Contrary to popular</a></h5>
 			     	    	<p>Lorem ipsum</p>
 			     	   </div>
-			 </div>
-			  <div class="col-md-4 box_2">
-		     	 <a href="single" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="images/pc5.jpg" alt="">
-			     	   	<span class="four">40,000$</span>
-			     	 </a>
-		     	   <div class="most-1">
-			     	   	<h5><a href="single">Contrary to popular</a></h5>
-			     	    	<p>Lorem ipsum</p>
-			     	   </div>
-		     	
-		      </div>
-			  <div class="col-md-4 box_2">
-		     	 <a href="single" class="mask">
-			     	   	<img class="img-responsive zoom-img" src="images/pc3.jpg" alt="" >
-			     	   	<span class="four">40,000$</span>
-			     	 </a>
-		     	   <div class="most-1">
-			     	   	 <h5><a href="single">Contrary to popular</a></h5>
-			     	    	<p>Lorem ipsum</p>
-			     	   </div>
-		     	
-		      </div>
+			    </div>
+			@endforeach
+			@endif
 		 	<div class="clearfix"> </div>
 		</div>
 	</div>

@@ -99,8 +99,8 @@ echo json_encode($arr);
         $fechaF = DateTime::createFromFormat('d-m-Y', $input['fecha-fin']);
 
         $obj = [
-            'Longitud' => $input['longitud'],
-            'Latitud' => $input['latitud'],
+            'Longitud' => $input['latitud'],
+            'Latitud' => $input['longitud'],
             'FechaInicioPublicacion' => $fechaI,
             'FechaFinPublicacion' => $fechaF,
             'Estado' => $input['estado'],
@@ -129,7 +129,9 @@ echo json_encode($arr);
                 $filename = $image->getClientOriginalName();
                 //$location = storage_path('app/'.$filename); // carpeta storage
                 $location = public_path($path.$filename);
-                Image::make($image)->resize(800,400)->save($location);
+                //Image::make($image)->resize(800,400)->save($location);
+                Image::make($image)->save($location);
+
                 $filename = $path.$filename;
 
                 /* guardar en bd */

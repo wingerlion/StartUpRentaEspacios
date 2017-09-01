@@ -19,15 +19,58 @@ class PublicacionController extends Controller
 
     public function indexExternal()
     {
-        $imagenes = Imagen::all();
-        foreach ($imagenes as $imagen){
+
+
+
+        $inmuebles = Inmueble::all();
+        $infoImagenes = array();
+        foreach ($inmuebles as $inmueble){
+
+            $imagen = new Imagen;            
+            $imagen['Longitud'] = $inmueble['Longitud'];
+            $imagen['Latitud'] = $inmueble['Latitud'];
+            $inmuebleInfo = Imagen::where('IdInmueble',  $inmueble['IdInmueble'] )->first() ;            
+            $imagen['Ruta'] = $inmuebleInfo['Ruta'];
+            array_push($infoImagenes,$imagen);
+        }
+
+        
+        return view('busquedaSpace', compact('infoImagenes'));
+
+        
+     
+        /*
+        $infoImagenes = Imagen::all();
+        foreach ($infoImagenes  as $imagen){
 
             $inmuebleInfo = Inmueble::where('IdInmueble',  $imagen['IdInmueble'] )->first() ;    
             $imagen['Longitud'] = $inmuebleInfo['Longitud'];
             $imagen['Latitud'] = $inmuebleInfo['Latitud'];
             
         }
-        return view('busquedaSpace', compact('imagenes'));
+        var_dump($infoImagenes);
+        
+        return view('busquedaSpace', compact('infoImagenes'));
+
+        */
+    
+   
+ 
+
+        $inmuebles = Inmueble::all();
+        $infoImagenes = array();
+        foreach ($inmuebles as $inmueble){
+            
+            $imagen['Longitud'] = $inmueble['Longitud'];
+            $imagen['Latitud'] = $inmueble['Latitud'];
+            $inmuebleInfo = Imagen::where('IdInmueble',  $inmueble['IdInmueble'] )->first() ;            
+            $imagen['Ruta'] = $inmuebleInfo['Ruta'];
+            array_push($infoImagenes,$imagen);
+        }
+     
+
+        return view('busquedaSpace', compact('infoImagenes'));
+        
     }
 
     public function getLongLatAll(){

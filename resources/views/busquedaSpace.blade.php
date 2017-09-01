@@ -521,11 +521,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 
 					<div id="container_imagenes_gerardo">
-						@if (count($imagenes)>0)
-						@foreach($imagenes as $imagen)
+						@if (count($infoImagenes)>0)
+						@foreach($infoImagenes as $imagen)
+						
 						<div id="item-adbox">
 							<div id="aviso">
-								<div id="img_box" style = "background: url({{ $imagen->Ruta }}) no-repeat scroll 50% 50% / cover padding-box border-box"></div>
+								<div id="img_box" style = "background: url({{ $imagen->Ruta	 }}) no-repeat scroll 50% 50% / cover padding-box border-box"></div>
 								<div id="top-info">
 										<span id="label-nuevo"> Nuevo </span>  
 								</div>

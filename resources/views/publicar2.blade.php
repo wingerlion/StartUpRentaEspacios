@@ -83,26 +83,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class='progress_inner__bar--set'></div>
             <div class='progress_inner__tabs'>
                 <div class='tab tab-0'>
+
                     <h1>Datos Basicos</h1>
-                    <p>Queremos conocer la información básica del lugar del alquiler ¿Cierto? :) del alquiler ¿Cierto? :) del alquiler ¿Cierto? :) </p>
+                    <p>Queremos conocer la información básica del lugar del alquiler ¿Cierto? :) Ingresa tus datos básicos para que tus futuros clientes puedan contactarte</p>
                     <br>
                     <div class="form-group">
                         <label for="inmueble">Tipo de inmueble</label>
                         <br>
-                        <br>
                         <select name = "inmueble-list" id = "inmueble-list">
                         </select>
                     </div>
+
+                    <div class="form-group">
+                         <br> 
+                         <label for="inmueble">Introduce tu dirección completa</label>
+                         <br> <br>
+                          <input type="text" class="form-control" id="direccion" placeholder="Dirección..." name="direccion">
+                        </select>
+                    </div>
+
+    
                     <div class="form-group" style="height: 400px;">
+                          <br>
+                          <label for="inmueble">Arrastra el Pin Rojo hasta tu dirección </label>
+                          <br>
                           <div id="map" style="height: 100%; width: 100%"></div>
                       </div>
+
+        
+                      <div class="form-group">
+                         <br> <br> <br>     
+                         <label for="inmueble">Referencia</label>
+                         <br>
+                          <input type="text" class="form-control" id="referencia" placeholder="Referencia" name="referencia">
+                        </select>
+                    </div>
+
+                     
                 </div>
        
 
                 <div class='tab tab-1'>
-                <h1>Nuevo Espacio</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
-                </div>
+
+                    <h1>Nuevo Espacio</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
+                    <div class="form-group" style="width:40%; display: inline-block;">
+                    <br><br>
+                              
+                    
+                          <label for="pwd">Fecha Inicio Publicacion</label><br> 
+                              <i class="glyphicon glyphicon-calendar"></i>  <input type="text" class="form-control" name="fecha-inicio" id="datepicker1">
+                          </div>
+                          <div class="form-group" style="width:40%; display: inline-block;">
+                              <label for="pwd">Fecha Fin Publicacion</label><br>
+                              <i class="glyphicon glyphicon-calendar"></i>  <input type="text" class="form-control" name="fecha-fin" id="datepicker2">
+                          </div>
+                
+                     </div>
+                     
                 <div class='tab tab-2'>
                 <h1>Caracteristicas </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.</p>
@@ -130,7 +168,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    
+      
+<script src="{{ URL::asset('js/jquery.js')}}" type="text/javascript"></script>
+<script src="{{ URL::asset('js/jquery-ui.min.js')}}" type="text/javascript"></script>
+                    <script src="{{ URL::asset('js/datepicker-es.js')}}" type="text/javascript"></script>
+                      <script>
+                            $( function() {
+                              //$( "#datepicker" ).datepicker($.datepicker.regional[ "es" ] );
+                              $( "#datepicker1" ).datepicker({dateFormat: 'dd-mm-yy'}, $.datepicker.regional[ "es" ]);
+                            });
+                            $( function() {
+                              //$( "#datepicker" ).datepicker($.datepicker.regional[ "es" ] );
+                              $( "#datepicker2" ).datepicker({dateFormat: 'dd-mm-yy'}, $.datepicker.regional[ "es" ]);
+                            });
+                            // Aqui se verificara que la fecha final sea mayor a la inicial
+                            $( "#datepicker2" ).change(function(){
+                                var date1 = $("#datepicker1").datepicker().val();
+                                var date2 = this.datepicker().val();
+                                // obtener dia - mes - anho
+                                var res1 = date1.split("-");
+                                var res2 = date2.split("-");
+                                console.log(res1);
+                                console.log(res2);
+                            });
+                        </script>
 
 </body>
 
@@ -138,28 +199,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     $directory = "imagenes_/";      
     $images = glob($directory . "*.*");
     ?>
-  
-  
+
+
+
+
+
   
 <script>
          var latitud;
                 var longitud;
                 var map;
                 var marker;
+
+                
                 function initMap() {
                     console.log('INICIAR MAPA GOOGLE');
                     var myLatLng = {lat: -12.054368, lng: -77.040073};
+
+                    var searchBox = new google.maps.places.SearchBox(document.getElementById('direccion'));
+
 
                     map = new google.maps.Map(document.getElementById('map'), {
                         center: myLatLng,
                         zoom: 8
                     });
 
+                    
                     marker = new google.maps.Marker({
                         position: myLatLng,
                         map: map,
                         draggable: true,
                         title: 'Ubicación'
+                    });
+
+
+                    
+                    searchBox.addListener('bounds_changed', function() {
+                       var places = new google.maps.LatLngBounds();
+                       var i, places;
+
+                       for (i = 0; place = places[i]; i++){
+
+                           bounds.extend(place.geometry.location);
+                           console.log("hola");
+                           marker.setPosition(place.geometry.location);
+
+                       }
+
+                       map.fitBounds(bounds);
+                       map.setZoom(15);
                     });
 
                     //inicializar datos a enviar
@@ -206,10 +294,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 }
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfVyMAoFLOJNWifS9QAAJfvAAveyQD2WQ&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQwG1d7QYu_dbedftXgRCFLsB24xCbHDk&libraries=places&callback=initMap"
+async defer></script>
 
 
 <script type="text/javascript">
+
     $( document ).ready(function() {
 
 
@@ -400,9 +490,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     
 
 
-
-
-
 </script>
-    
+
+
+
+
+
+
+
 </html>
