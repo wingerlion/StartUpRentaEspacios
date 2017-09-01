@@ -216,6 +216,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     console.log('INICIAR MAPA GOOGLE');
                     var myLatLng = {lat: -12.054368, lng: -77.040073};
 
+                    var options = {
+                        types: ['(cities)'],
+                        componentRestrictions: {country: "us"}
+                    };
+
                     var searchBox = new google.maps.places.SearchBox(document.getElementById('direccion'));
 
 
@@ -232,23 +237,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         title: 'Ubicación'
                     });
 
+                    google.maps.event.addDomListener(searchBox, 'places_changed', function() {
+                        var places = searchBox.getPlaces();
+                        var bounds = new google.maps.LatLngBounds();
+                        var i, place;
 
-                    
-                    searchBox.addListener('bounds_changed', function() {
-                       var places = new google.maps.LatLngBounds();
-                       var i, places;
-
-                       for (i = 0; place = places[i]; i++){
-
-                           bounds.extend(place.geometry.location);
-                           console.log("hola");
-                           marker.setPosition(place.geometry.location);
-
-                       }
-
-                       map.fitBounds(bounds);
-                       map.setZoom(15);
+                        for (i = 0; place = places[i]; i++) {
+                            bounds.extend(place.geometry.location);
+                            marker.setPosition(place.geometry.location);
+                        }
+                        map.fitBounds(bounds);
+                        map.setZoom(15);
                     });
+                    
+            
 
                     //inicializar datos a enviar
                     latitud = marker.getPosition().lat();
