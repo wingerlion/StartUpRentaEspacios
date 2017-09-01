@@ -419,7 +419,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-                           <input id="archivos" name="image" type="file" multiple=true class="file-loading">
+                           <input id="archivos" name="images[]" type="file" multiple class="file-loading">
 
                     
 

@@ -89,6 +89,8 @@ echo json_encode($arr);
         ]);
         */
 
+        //dd($request);
+
     	$user = Auth::user();
     	$userId = $user->id;
     	$input = $request->all();
@@ -115,24 +117,28 @@ echo json_encode($arr);
 
         $inmueble = Inmueble::create($obj);
 
-        // imagen
+        // imagenes
         $path = 'uploads/inmuebles/'; //carpeta en la que se guardan las imagenes
         $filename = null;
 
-        if($request->hasFile('image')){
-            $image = $request->file('image');
-            $filename = $image->getClientOriginalName();
-            //$location = storage_path('app/'.$filename); // carpeta storage
-            $location = public_path($path.$filename);
-            Image::make($image)->resize(800,400)->save($location);
+        if($request->hasFile('images')){
 
-            $filename = $path.$filename;
+            $files = $request->file('images');
+            foreach ($files as $image) {
+                /* procesar imagen */
+                $filename = $image->getClientOriginalName();
+                //$location = storage_path('app/'.$filename); // carpeta storage
+                $location = public_path($path.$filename);
+                Image::make($image)->resize(800,400)->save($location);
+                $filename = $path.$filename;
+
+                /* guardar en bd */
+                $imag = new Imagen; 
+                $imag->Ruta = $filename;
+                $imag->IdInmueble = $inmueble->id;
+                $imag->save();
+            }
         }
-
-        $imagen = Imagen::create([
-            'Ruta' => $filename,
-            'IdInmueble' => $inmueble->id,
-        ]);
 
      //   return redirect()->route('home.index')->with('success', "Se publicó el inmueble exitosamente.");   
         return view('dashboard');
