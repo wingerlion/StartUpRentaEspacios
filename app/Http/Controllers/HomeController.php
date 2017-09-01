@@ -31,6 +31,8 @@ class HomeController extends Controller
 
     public function welcomeHome()
     {
+
+        
         $imagenes = Imagen::all();
         $cantidadImagenes = count($imagenes); //modificar esto ya que solo deberia mostrar la principal
         $arregloImagenes = [];
