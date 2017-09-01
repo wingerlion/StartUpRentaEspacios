@@ -1,3 +1,214 @@
+/* LISTA DE IMAGENEES */
+
+#container_imagenes_gerardo{
+
+
+margin-left: 10px;
+margin-top: 60px;
+
+}
+
+
+#item-adbox {
+    bottom: 0px;
+    box-sizing: border-box;
+    float: left;
+    height: 421.617px;
+    left: 0px;
+    letter-spacing: 1px;
+    position: relative;
+    right: 0px;
+    text-size-adjust: 100%;
+    top: 0px;
+    width: 421.617px;
+    perspective-origin: 210.797px 210.797px;
+    transform-origin: 210.797px 210.797px;
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px 8.76563px 15px;
+}/*#DIV_1*/
+
+#item-adbox:before {
+    box-sizing: border-box;
+    display: block;
+    height: 421.617px;
+    letter-spacing: 1px;
+    text-size-adjust: 100%;
+    width: 421.617px;
+    perspective-origin: 210.797px 210.797px;
+    transform-origin: 210.797px 210.797px;
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 421.617px 0px 0px;
+}/*#DIV_1:before*/
+
+#aviso {
+    bottom: 0px;
+    box-sizing: border-box;
+    cursor: zoom-in;
+    height: 421.617px;
+    left: 0px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0px;
+    text-size-adjust: 100%;
+    top: 0px;
+    width: 421.617px;
+    perspective-origin: 210.797px 210.797px;
+    transform-origin: 210.797px 210.797px;
+    border: 3.98438px solid rgb(255, 255, 255);
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all 0.5s ease 0s;
+}/*#DIV_2*/
+
+#img_box {
+    background-position: 50% 50%;
+    bottom: 0px;
+    box-sizing: border-box;
+    cursor: zoom-in;
+    height: 413.648px;
+    left: 0px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0px;
+    text-size-adjust: 100%;
+    top: 0px;
+    width: 413.648px;
+    perspective-origin: 206.813px 206.813px;
+    transform-origin: 206.813px 206.813px;
+    background:  no-repeat scroll 50% 50% / cover padding-box border-box;
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}/*#DIV_3*/
+
+#top-info {
+    bottom: 356.672px;
+    box-sizing: border-box;
+    cursor: zoom-in;
+    height: 41.9766px;
+    left: 0px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0px;
+    text-size-adjust: 100%;
+    top: 15px;
+    width: 413.648px;
+    z-index: 10;
+    perspective-origin: 206.813px 20.9766px;
+    transform-origin: 206.813px 20.9766px;
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 15px;
+}/*#DIV_4*/
+
+#label-nuevo {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: zoom-in;
+    display: inline-block;
+    height: 28.9922px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 61.9688px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 30.9844px 14.4844px;
+    transform-origin: 30.9844px 14.4844px;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(0, 128, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 30px 30px 30px 30px;
+    font: normal normal normal normal 9px / 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 9px 10px 8px;
+}/*#SPAN_5*/
+
+#bottom-info {
+    bottom: 15px;
+    box-sizing: border-box;
+    cursor: zoom-in;
+    height: 51.9844px;
+    left: 0px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0px;
+    text-size-adjust: 100%;
+    top: 346.664px;
+    width: 413.648px;
+    z-index: 10;
+    perspective-origin: 206.813px 25.9922px;
+    transform-origin: 206.813px 25.9922px;
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 15px 0px 90px;
+}/*#DIV_8*/
+
+#avatar {
+    bottom: 0px;
+    box-sizing: border-box;
+    cursor: zoom-in;
+    height: 60px;
+    left: 15px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 338.648px;
+    text-size-adjust: 100%;
+    top: -8.01563px;
+    width: 60px;
+    perspective-origin: 30px 30px;
+    transform-origin: 30px 30px;
+    font: normal normal normal normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}/*#DIV_9*/
+
+
+
+#precio {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: zoom-in;
+    height: 27px;
+    letter-spacing: 1px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-size-adjust: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 308.648px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 154.313px 13.5px;
+    transform-origin: 154.313px 13.5px;
+    caret-color: rgb(255, 255, 255);
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal 500 normal 23.79px / 28px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 3px;
+    outline: rgb(255, 255, 255) none 0px;
+    overflow: hidden;
+}/*#H3_11*/
+
+#ubicacion {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: zoom-in;
+    height: 15px;
+    letter-spacing: 1px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-size-adjust: 100%;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 308.648px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 154.313px 7.5px;
+    transform-origin: 154.313px 7.5px;
+    caret-color: rgb(255, 255, 255);
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal 500 normal 11.89px / 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 7px;
+    outline: rgb(255, 255, 255) none 0px;
+    overflow: hidden;
+}/*#P_12*/
+
+
+
+
 .map iframe {
     width: 100%;
     min-height: 1050px;
@@ -768,7 +979,7 @@ img {
      box-sizing: border-box;
      color: rgb(68, 68, 68);
      float: left;
-     height: 100%;
+     height: 106%;
      left: 0px;
      min-height: 1px;
      position: relative;
@@ -4101,6 +4312,8 @@ img {
      font: normal normal normal normal 16px / 25.6px Montserrat, Helvetica, Helvetica, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
      margin: 15px 0px 0px;
      outline: rgb(68, 68, 68) none 0px;
+     overflow: scroll;
+     
  }/*#DIV_249*/
  
  #DIV_250 {

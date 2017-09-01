@@ -121,6 +121,10 @@ Route::get('publicar', function () {
     return view('publicar');
 });
 
+Route::get('publicar2', function () {
+    return view('publicar2');
+});
+
 
 
 Route::get('buscar', function () {
@@ -154,6 +158,13 @@ Route::get('/inmueble/create', 'InmuebleController@create');
 Route::post('/inmueble', 'InmuebleController@store');
 
 
+
+Route::get('pruebados', function () {
+    return view('otraPrueba');
+});
+
+
+
 //publicaciones
 Route::get('/buscar', ['as' => 'buscar', 'uses' => 'PublicacionController@indexExternal']);
 Route::get('/getLongLatAll', ['as' => 'buscar', 'uses' => 'PublicacionController@getLongLatAll']);
@@ -172,4 +183,3 @@ Route::get('/getCiudades/{idDepartamento}', 'CiudadController@getCiudades');
 Route::get('/getDistritos/{idCiudad}', 'DistritoController@getDistritos');
 
 Route::get('/upload', 'InmuebleController@upload');
-
